@@ -1,0 +1,75 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	LOTUSS - Multipurpose HTML Template For Yoga, Gym & Fiteness	 
+Version:	1.0.0
+Assigned to:	Themeforest
+Primary use:	Yoga, Health, Meditiation, Personal Trainer, Pilates, Fitness, Physical exercise 
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+
+1 Fonts
+2 Body
+3 Default Css
+	3.1 Normal Css
+	3.2 Form Css
+	3.3 Button style
+	3.4 padding style
+	3.5 Margin Style
+4 Background
+5 Header
+	5.1 Menu
+	5.2 Slider
+6 Service Section
+7 Yoga Section
+8 Team Section
+9 Class Section
+10 Banner
+11 Gallery
+12 Blog Section
+13 Price Table
+14 Partner
+15 Page Header
+16 Pre Loder
+17 Page Style
+	17.1 Team Profile
+	17.2 Progress Bar
+	17.3 Error Page
+	17.4 Comming Soon Page
+	17.5 Service Page
+	17.6 Calander
+	17.7 Pagination
+	17.8 Comment Section
+	17.9 Sidebar
+	17.10 Faq
+18 Serach Popup
+19 Footer
+-------------------------------------------------------------------*/
+
+/* Bootstrap Css */
+@import 'assets/css/bootstrap.min.css';
+/* Font Awesome Css */
+@import 'assets/plugin/font-awesome/css/font-awesome.min.css';
+/* Owl-Carousel Css */
+@import 'assets/plugin/owl-carousel/css/owl.carousel.min.css';
+/* Megamenu Css */
+@import 'assets/plugin/megamenu/css/hover-dropdown-menu.css';
+/* Hover-Effect Css */
+@import 'assets/plugin/hover-effect/css/hover.css';
+/* Date-Picker Css */
+@import 'assets/plugin/date-picker/css/jquery-ui.min.css';
+/* Jquery-Ui Css */
+@import 'assets/plugin/jquery-ui/css/jquery-ui.css';
+/* Fancybox Css */
+@import 'assets/plugin/fancybox/css/jquery.fancybox.css';
+/* Switcher Css */
+@import 'assets/plugin/switcher/css/switcher.css';
+/* linea-icon Css */
+@import 'assets/plugin/linea-icon/iconfont.css';
+/* Style Css */
+@import 'assets/css/style.css';
+/* Responsive Css */
+@import 'assets/css/responsive.css';
+/* Color Css */
+@import 'assets/css/color.css';
