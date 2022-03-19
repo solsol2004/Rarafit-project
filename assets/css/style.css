@@ -19,6 +19,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Cafe24Ohsquareair";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/Cafe24Ohsquareair.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /*
 ==========================
 2 Body
@@ -1401,6 +1409,104 @@ figure.effect-bubba img {
   right: 40px;
 }
 
+.team {
+  width: 100%;
+  position: relative;
+  float: left;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+figure.team-img:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  opacity: 0;
+  z-index: 1;
+  webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+.team:hover figure.team-img:before {
+  opacity: 0.85;
+}
+.team:hover {
+  background-color: #fff;
+  box-shadow: 0px 7px 14px 3px rgba(0, 0, 0, 0.175);
+}
+.team:hover .team-icon {
+  opacity: 1;
+}
+.team-img {
+  position: relative;
+  width: 100%;
+  float: left;
+  z-index: 1;
+}
+figcaption.team-icon ul {
+  margin: 0 22%;
+}
+.team-icon {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 48%;
+  left: 48%;
+  margin-top: -3px;
+  margin-left: -48%;
+  opacity: 0;
+  z-index: 1;
+  webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+.team-icon li a:hover {
+  color: white;
+}
+.team-circle {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 100%;
+  font-size: 16px;
+  padding: 5px 10px;
+  float: left;
+  color: #777777;
+  webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+.trainer-1 {
+  text-align: center;
+  background-color: #eee;
+  width: 100%;
+  float: left;
+}
+.trainer-1 h4 a {
+  text-transform: uppercase;
+  color: #202020;
+}
+.trainer-1 h5 {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*
+
 /*
 ==========================
 9. Class Section
@@ -1727,7 +1833,6 @@ figcaption.img-effect-icon {
   position: relative;
 }
 
-
 .cube1,
 .cube2 {
   width: 15px;
@@ -1795,8 +1900,117 @@ figcaption.img-effect-icon {
 */
 /* 17.1 Team Profile */
 
-
+.trainer {
+  text-align: center;
+  background-color: #ffffff;
+  width: 100%;
+  float: left;
 }
+.trainer-box {
+  background-color: #eee;
+}
+.trainer h4 a {
+  text-transform: uppercase;
+  color: #000;
+}
+.trainer h5 {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.trainer-color {
+  background-color: #eee;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.trainer-color-1 {
+  background-color: #eee;
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.trainer-icon {
+  position: relative;
+  float: left;
+  width: 100%;
+  top: -7px;
+}
+.trainer-icon ul li {
+  float: left;
+  padding: 5px;
+}
+.trainer-text {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+.trainer-text h4 {
+  margin: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.trainer-text h4 a {
+  color: #202020;
+}
+.trainer-effect {
+  position: relative;
+  width: 100%;
+  float: left;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+.trainer-hov {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+figure.trainer-hov img {
+  width: 100%;
+}
+.trainer-list.sec {
+  padding-bottom: 4px;
+}
+figure.trainer-hov:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  opacity: 0;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+.trainer-effect:hover figure.trainer-hov:before {
+  opacity: 0.5;
+}
+.trainer-effect:hover a {
+  opacity: 1;
+}
+.trainer-box .owl-prev {
+  background: transparent;
+  color: #000;
+  font-size: 25px;
+  margin-left: -20px;
+}
+.trainer-box .owl-next {
+  background: transparent;
+  color: #000;
+  font-size: 25px;
+  margin-right: -20px;
+}
+.trainer-box .owl-nav {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+}
+
 /* 17.2 Progress Bar */
 
 .tooltip {
@@ -2581,6 +2795,7 @@ figure.sidebar-effect:before {
 .text-color-grey {
   color: grey;
 }
+
 .color-detail {
   color: #ffffff;
 }
@@ -2671,7 +2886,7 @@ input.itg-button.pull-right.color-effect:hover {
   background-color: #fcf5f1;
 }
 .color-bright {
-  background-color: #F68989;
+  background-color: #e497a4;
 }
 ul.text-color.capitalize.capitalize li {
   padding-bottom: 5px;
@@ -2687,37 +2902,330 @@ ul.text-color.capitalize.capitalize li {
 ==========================
 */
 
-
 .iam {
   height: 120px;
-  float:left;
+  float: left;
 }
 
-.iam-status{
+.iam-status {
   overflow: hidden;
   position: relative;
   height: 30px;
-  float:left;
+  float: left;
 }
 .iam-status span {
- display: inline-block;
-color: #ee005b;
-position: relative;
-white-space: nowrap;
-top: 0;
-left: 0;
--webkit-animation: move 8s;
--webkit-animation-iteration-count: infinite;
--webkit-animation-delay: 1s;
+  display: inline-block;
+  color: #ee005b;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  -webkit-animation: move 8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
 }
 
 @keyframes move {
-0%  { top: 0px; }
-20% { top: -30px; }
-40% { top: -60px; }
-60% { top: -90px; }
-80% { top: -120px; }
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -30px;
+  }
+  40% {
+    top: -60px;
+  }
+  60% {
+    top: -90px;
+  }
+  80% {
+    top: -120px;
+  }
 }
 
+/*
+==========================
+21 Google Map
+==========================
+*/
 
+#gmap_canvas {
+  height: 410px;
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/*
+==========================
+22 Skylith template
+==========================
+*/
+
+.nk-text,
+.agency-1 h4 {
+  font-family: "Cafe24Shiningstar";
+}
+
+.agency-1 h4 {
+  font-size: 22px;
+}
+
+.nk-gap,
+.nk-gap-1,
+.nk-gap-2,
+.nk-gap-3,
+.nk-gap-4,
+.nk-gap-5,
+.nk-gap-6 {
+  display: block;
+  height: 20px;
+}
+
+.nk-gap::after,
+.nk-gap::before,
+.nk-gap-1::after,
+.nk-gap-1::before,
+.nk-gap-2::after,
+.nk-gap-2::before,
+.nk-gap-3::after,
+.nk-gap-3::before,
+.nk-gap-4::after,
+.nk-gap-4::before,
+.nk-gap-5::after,
+.nk-gap-5::before,
+.nk-gap-6::after,
+.nk-gap-6::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.nk-gap-1 {
+  height: 30px;
+}
+
+.nk-gap-2 {
+  height: 40px;
+}
+
+.nk-gap-3 {
+  height: 60px;
+}
+
+.nk-gap-4 {
+  height: 80px;
+}
+
+.nk-gap-5 {
+  height: 100px;
+}
+
+.nk-gap-6 {
+  height: 120px;
+}
+
+.nk-img-stretch {
+  width: 100%;
+  height: auto;
+}
+
+.nk-subtitle-3 {
+  position: relative;
+  margin-bottom: 12px;
+  font-family: inherit;
+  font-size: 0.83rem;
+  font-weight: 500;
+  color: #171717;
+  text-transform: uppercase;
+}
+
+.nk-subtitle-3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: -60px;
+  width: 30px;
+  margin-top: -1px;
+  border-bottom: 1px solid;
+}
+
+.nk-btn {
+  display: inline-block;
+  padding: 16px 35px;
+  font-family: inherit;
+  font-size: 0.96rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #252525;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nk-ibox-4 {
+  position: relative;
+  padding: 35px 30px;
+  border: 1px solid #ededed;
+}
+
+.nk-ibox-4 .nk-ibox-icon {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 17px;
+  font-size: 3.1rem;
+  line-height: 50px;
+  color: #252525;
+  text-align: center;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nk-ibox-4 .nk-ibox-title {
+  font-size: 0.91rem;
+  font-weight: 500;
+  color: #252525;
+  text-transform: uppercase;
+}
+
+.nk-ibox-4 .nk-ibox-text {
+  margin-top: 8px;
+  color: #444444;
+  opacity: 0.75;
+}
+
+.nk-ibox-4.nk-ibox-4-dark {
+  border-color: #3a3a3a;
+}
+
+.nk-ibox-4.nk-ibox-4-dark .nk-ibox-icon,
+.nk-ibox-4.nk-ibox-4-dark .nk-ibox-title {
+  color: #fff;
+}
+
+.nk-ibox-4.nk-ibox-4-dark .nk-ibox-text {
+  color: #8e8e8e;
+}
+
+.nk-ibox-4:hover {
+  color: #b9a186;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+.fadeInUp {
+  position: relative;
+  animation: fadeInUp 1s;
+}
+
+.fadeInUp:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.fadeInUp:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.fadeInUp:last-child {
+  animation-delay: 0.6s;
+}
+
+.background-second-color {
+  background-color: #e684aa;
+}
+
+.margin-lr-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.text-medium {
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.opacity-6 {
+  opacity: 0.6 !important;
+}
+
+.font-quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+}
+
+.ml-60 {
+  margin-left: 60px !important;
+}
+
+.row.vertical-gap > [class*="col-"] {
+  padding-top: 30px;
+}
+
+.row.vertical-gap {
+  margin-top: -30px;
+}
+
+.row.xs-gap.vertical-gap > [class*="col-"] {
+  padding-top: 10px;
+}
+
+.row.xs-gap.vertical-gap {
+  margin-top: -10px;
+}
+
+.row.sm-gap.vertical-gap > [class*="col-"] {
+  padding-top: 15px;
+}
+
+.row.sm-gap.vertical-gap {
+  margin-top: -15px;
+}
+
+.row.md-gap.vertical-gap > [class*="col-"] {
+  padding-top: 45px;
+}
+
+.row.md-gap.vertical-gap {
+  margin-top: -45px;
+}
+
+.row.lg-gap.vertical-gap > [class*="col-"] {
+  padding-top: 65px;
+}
+
+.row.lg-gap.vertical-gap {
+  margin-top: -65px;
+}
+
+.nk-ibox-icon i {
+  color: white;
+}
 /* Finish*/
