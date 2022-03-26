@@ -918,6 +918,11 @@ span {
 .marL50 {
   margin-left: 50px;
 }
+
+.marL58 {
+  margin-left: 58px;
+}
+
 .marL60 {
   margin-left: 60px;
 }
@@ -1678,6 +1683,22 @@ figcaption.team-icon ul {
   color: #fff;
   font-family: "Open Sans", sans-serif;
 }
+
+.yoga1-text p {
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-bottom: 0px;
+  color: rgb(117, 72, 66);
+  font-family: "Open Sans", sans-serif;
+}
+.yoga1-text-1 p {
+  text-transform: uppercase;
+  font-size: 60px;
+  margin-bottom: 0px;
+  color: rgb(117, 72, 66);
+  font-family: "Open Sans", sans-serif;
+}
+
 .yoga-relative {
   position: absolute;
   top: 8px;
@@ -1909,11 +1930,31 @@ figcaption.img-effect-icon {
 .trainer-box {
   background-color: #eee;
 }
+
+.trainer-box1 {
+  background-color: #fdeedd;
+}
 .trainer h4 a {
   text-transform: uppercase;
   color: #000;
 }
 .trainer h5 {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.class {
+  text-align: center;
+  background-color: #a76b6b;
+  width: 100%;
+  float: left;
+}
+
+.class h4 a {
+  text-transform: uppercase;
+  color: #000;
+}
+.class h5 {
   text-transform: capitalize;
   font-size: 16px;
 }
@@ -2006,6 +2047,24 @@ figure.trainer-hov:before {
   margin-right: -20px;
 }
 .trainer-box .owl-nav {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.class-box .owl-prev {
+  background: transparent;
+  color: #000;
+  font-size: 25px;
+  margin-left: -20px;
+}
+.class-box .owl-next {
+  background: transparent;
+  color: #000;
+  font-size: 25px;
+  margin-right: -20px;
+}
+.class-box .owl-nav {
   position: absolute;
   top: 50%;
   margin-top: -20px;
@@ -2896,6 +2955,18 @@ ul.text-color.capitalize.capitalize li {
   font-family: "Cafe24Shiningstar";
 }
 
+.hand-writing1 {
+  font-family: "Cafe24Shiningstar";
+  font-size: 20px;
+  color: rgb(117, 72, 66);
+}
+
+.hand-writing2 {
+  font-family: "Cafe24Shiningstar";
+  font-size: 30px;
+  color: #000;
+}
+
 /*
 ==========================
 20 Quote
@@ -3228,4 +3299,14 @@ ul.text-color.capitalize.capitalize li {
 .nk-ibox-icon i {
   color: white;
 }
+
+.dark-pink {
+  font-size: 20px;
+  color: #000;
+}
+
+.text-black {
+  color: black;
+}
+
 /* Finish*/
