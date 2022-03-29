@@ -3340,12 +3340,14 @@ ul.text-color.capitalize.capitalize li {
 }
 
 #insta-gallery {
-  width: 85%;
+  width: 80%;
+  overflow-x: hidden;
 }
 
 #insta-gallery li {
-  width: 25%;
+  width: 30%;
   list-style: none;
+  float: left;
 }
 
 #gallery li img {

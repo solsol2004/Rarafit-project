@@ -34,7 +34,6 @@
     type="text/javascript"
     src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=6t20vxvqju"
   ></script>
-  <script src="assets/js/instafeed.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -102,7 +101,7 @@
                       <a href="kids.html">키즈</a>
                     </li>
                     <li>
-                      <a href="#">채용문의</a>
+                      <a href="naver_map.html">채용문의</a>
                     </li>
                     <li><a href="contact.html">고객상담</a></li>
                     <li><a href="admin/admin-login.html">관리자</a></li>
@@ -519,8 +518,67 @@
               <h3><i class="fa fa-instagram fa-3x text-color-grey" aria-hidden="true"></i
                 ></h3>
             </div>
-            <div class="row">
-            <ul id="insta-gallery"></ul>
+            <div class="col-md-6 col-sm-12 col-xs-12 table-padB">
+              <div class="img-effect baby-img">
+                <figure>
+                  <img src="assets/img/photo-gallary/16.jpg" alt="" />
+                  <figcaption class="img-effect-icon">
+                    <a
+                      href="assets/img/photo-gallary/gallary-popup-1.jpg"
+                      class="fancybox"
+                      data-fancybox-group="group"
+                      ><i class="fa fa-search" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="detail-section">
+                <figure class="img-effect baby-img">
+                  <img src="assets/img/photo-gallary/19.jpg" alt="" />
+                  <figcaption class="img-effect-icon">
+                    <a
+                      href="assets/img/photo-gallary/gallary-popup-2.jpg"
+                      class="fancybox"
+                      data-fancybox-group="group"
+                      ><i class="fa fa-search" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="img-effect baby-img">
+                <figure>
+                  <img src="assets/img/photo-gallary/18.jpg" alt="" />
+                  <figcaption class="img-effect-icon">
+                    <a
+                      href="assets/img/photo-gallary/gallary-popup-3.jpg"
+                      class="fancybox"
+                      data-fancybox-group="group"
+                      ><i class="fa fa-search" aria-hidden="true"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="respons-img padT30">
+                <div class="img-effect baby-img">
+                  <figure>
+                    <img src="assets/img/photo-gallary/17.jpg" alt="" />
+                    <figcaption class="img-effect-icon">
+                      <a
+                        href="assets/img/photo-gallary/gallary-popup-4.jpg"
+                        class="fancybox"
+                        data-fancybox-group="group"
+                        ><i class="fa fa-search" aria-hidden="true"></i
+                      ></a>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -568,15 +626,6 @@
     </section>
     <!--//=== Footer finish ===//-->
     <!--//=== Finish ===//-->
-    <!--Instagram API-->
-    <script type="text/javascript">
-      var feed = new Instafeed({
-        target:'insta-gallery',
-        template:'<li><a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a><li>',
-        accessToken: 'IGQVJVcFJvY3FhcDBiZA2hFNndkVUFWZA3VBRGliMUg5VjZABd2d3NXFvd2xINEtzVDJsZAE5PdnJJNWxBM3RiSnAzYzV0RU9yRGNzaVFBbjUzS0lGX3JDd1BRcGIyX1BhU2ZAuRldDNXdtLUlIUnFBWUhVdAZDZD'
-      });
-      feed.run();
-  </script>
     <!--Naver Map-->
     <script>
       var HOME_PATH = window.HOME_PATH || ".";
@@ -595,7 +644,7 @@
         '<div class="iw_inner">',
         "   <span>라라핏 필라테스</span>",
         '       <img src="assets/img/logo-vertical.png" width="23" height="23" class="thumb" /><br />',
-        "   <p>서울 중랑구 동일로 678-1 / 2층<br /><br />",
+        "   <p>서울 중랑구 동일로 678-1 / 2층<br />",
         "       010-6460-3363<br />",
         "   </p>",
         "</div>",
@@ -615,7 +664,6 @@
 
       infowindow.open(map, marker);
     </script>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/plugin/jquery-ui/js/jquery-ui.js"></script>
