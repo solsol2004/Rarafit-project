@@ -3341,9 +3341,6 @@ ul.text-color.capitalize.capitalize li {
 
 #insta-gallery {
   width: 85%;
-  margin: 3em auto;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 #insta-gallery li {
