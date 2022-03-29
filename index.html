@@ -34,6 +34,7 @@
     type="text/javascript"
     src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=6t20vxvqju"
   ></script>
+  <script src="assets/js/instafeed.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -519,60 +520,6 @@
                 ></h3>
             </div>
             <div id="instafeed"></div>
-
-            <script type="text/javascript">
-                var feed = new Instafeed({
-                  accessToken: 'IGQVJVcFJvY3FhcDBiZA2hFNndkVUFWZA3VBRGliMUg5VjZABd2d3NXFvd2xINEtzVDJsZAE5PdnJJNWxBM3RiSnAzYzV0RU9yRGNzaVFBbjUzS0lGX3JDd1BRcGIyX1BhU2ZAuRldDNXdtLUlIUnFBWUhVdAZDZD'
-                });
-                feed.run();
-            </script>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="detail-section">
-                <figure class="img-effect baby-img">
-                  <img src="assets/img/photo-gallary/19.jpg" alt="" />
-                  <figcaption class="img-effect-icon">
-                    <a
-                      href="assets/img/photo-gallary/gallary-popup-2.jpg"
-                      class="fancybox"
-                      data-fancybox-group="group"
-                      ><i class="fa fa-search" aria-hidden="true"></i
-                    ></a>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="img-effect baby-img">
-                <figure>
-                  <img src="assets/img/photo-gallary/18.jpg" alt="" />
-                  <figcaption class="img-effect-icon">
-                    <a
-                      href="assets/img/photo-gallary/gallary-popup-3.jpg"
-                      class="fancybox"
-                      data-fancybox-group="group"
-                      ><i class="fa fa-search" aria-hidden="true"></i
-                    ></a>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
-              <div class="respons-img padT30">
-                <div class="img-effect baby-img">
-                  <figure>
-                    <img src="assets/img/photo-gallary/17.jpg" alt="" />
-                    <figcaption class="img-effect-icon">
-                      <a
-                        href="assets/img/photo-gallary/gallary-popup-4.jpg"
-                        class="fancybox"
-                        data-fancybox-group="group"
-                        ><i class="fa fa-search" aria-hidden="true"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -620,7 +567,12 @@
     <!--//=== Footer finish ===//-->
     <!--//=== Finish ===//-->
     <!--Instagram API-->
-    <script src="assets/js/instafeed.min.js"></script>
+    <script type="text/javascript">
+      var feed = new Instafeed({
+        accessToken: 'IGQVJVcFJvY3FhcDBiZA2hFNndkVUFWZA3VBRGliMUg5VjZABd2d3NXFvd2xINEtzVDJsZAE5PdnJJNWxBM3RiSnAzYzV0RU9yRGNzaVFBbjUzS0lGX3JDd1BRcGIyX1BhU2ZAuRldDNXdtLUlIUnFBWUhVdAZDZD'
+      });
+      feed.run();
+  </script>
     <!--Naver Map-->
     <script>
       var HOME_PATH = window.HOME_PATH || ".";
