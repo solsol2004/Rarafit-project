@@ -3309,4 +3309,8 @@ ul.text-color.capitalize.capitalize li {
   color: black;
 }
 
+.iw_inner {
+  font-family: "NanumSquareRound";
+}
+
 /* Finish*/
