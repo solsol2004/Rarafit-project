@@ -1,2 +1,15 @@
-https://api.instagram.com/oauth/authorize?client_id=369839428381664&redirect_uri=https://rarafit.netlify.app/&scope=user_profile,user_media&response_type=code
-IGQVJVcFJvY3FhcDBiZA2hFNndkVUFWZA3VBRGliMUg5VjZABd2d3NXFvd2xINEtzVDJsZAE5PdnJJNWxBM3RiSnAzYzV0RU9yRGNzaVFBbjUzS0lGX3JDd1BRcGIyX1BhU2ZAuRldDNXdtLUlIUnFBWUhVdAZDZD
+<script src="assets/js/instafeed.min.js"></script>
+
+<ul id="insta-gallery"></ul>
+
+<!--Instagram API-->
+<script type="text/javascript">
+  var feed = new Instafeed({
+    target: "insta-gallery",
+    template:
+      '<li><a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a><li>',
+    accessToken:
+      "IGQVJVcFJvY3FhcDBiZA2hFNndkVUFWZA3VBRGliMUg5VjZABd2d3NXFvd2xINEtzVDJsZAE5PdnJJNWxBM3RiSnAzYzV0RU9yRGNzaVFBbjUzS0lGX3JDd1BRcGIyX1BhU2ZAuRldDNXdtLUlIUnFBWUhVdAZDZD",
+  });
+  feed.run();
+</script>
