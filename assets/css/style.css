@@ -3319,9 +3319,24 @@ ul.text-color.capitalize.capitalize li {
   height: 400px;
 }
 
+#pilates-map {
+  width: 100%;
+  height: 350px;
+}
+
+#pt-map {
+  width: 100%;
+  height: 350px;
+}
+
 #kids-map {
   width: 100%;
   height: 350px;
+}
+
+#contact-map {
+  width: 100%;
+  height: 400px;
 }
 
 /* Finish*/
