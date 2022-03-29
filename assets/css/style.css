@@ -3311,6 +3311,9 @@ ul.text-color.capitalize.capitalize li {
 
 .iw_inner {
   font-family: "NanumSquareRound";
+  padding: 20px;
+  border-style: none;
+  border: 1px solid salmon;
 }
 
 #map {
