@@ -101,7 +101,7 @@
                       <a href="kids.html">키즈</a>
                     </li>
                     <li>
-                      <a href="naver_map.html">채용문의</a>
+                      <a href="#">채용문의</a>
                     </li>
                     <li><a href="contact.html">고객상담</a></li>
                     <li><a href="admin/admin-login.html">관리자</a></li>
@@ -518,21 +518,14 @@
               <h3><i class="fa fa-instagram fa-3x text-color-grey" aria-hidden="true"></i
                 ></h3>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 table-padB">
-              <div class="img-effect baby-img">
-                <figure>
-                  <img src="assets/img/photo-gallary/16.jpg" alt="" />
-                  <figcaption class="img-effect-icon">
-                    <a
-                      href="assets/img/photo-gallary/gallary-popup-1.jpg"
-                      class="fancybox"
-                      data-fancybox-group="group"
-                      ><i class="fa fa-search" aria-hidden="true"></i
-                    ></a>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
+            <div id="instafeed"></div>
+
+            <script type="text/javascript">
+                var feed = new Instafeed({
+                  accessToken: 'IGQVJVcFJvY3FhcDBiZA2hFNndkVUFWZA3VBRGliMUg5VjZABd2d3NXFvd2xINEtzVDJsZAE5PdnJJNWxBM3RiSnAzYzV0RU9yRGNzaVFBbjUzS0lGX3JDd1BRcGIyX1BhU2ZAuRldDNXdtLUlIUnFBWUhVdAZDZD'
+                });
+                feed.run();
+            </script>
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="detail-section">
                 <figure class="img-effect baby-img">
@@ -626,6 +619,8 @@
     </section>
     <!--//=== Footer finish ===//-->
     <!--//=== Finish ===//-->
+    <!--Instagram API-->
+    <script src="assets/js/instafeed.min.js"></script>
     <!--Naver Map-->
     <script>
       var HOME_PATH = window.HOME_PATH || ".";
@@ -664,6 +659,7 @@
 
       infowindow.open(map, marker);
     </script>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/plugin/jquery-ui/js/jquery-ui.js"></script>
