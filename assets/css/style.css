@@ -3313,4 +3313,8 @@ ul.text-color.capitalize.capitalize li {
   font-family: "NanumSquareRound";
 }
 
+#map {
+  width: 100%;
+}
+
 /* Finish*/
