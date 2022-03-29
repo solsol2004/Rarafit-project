@@ -3339,4 +3339,20 @@ ul.text-color.capitalize.capitalize li {
   height: 400px;
 }
 
+#insta-gallery {
+  width: 85%;
+  margin: 3em auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#insta-gallery li {
+  width: 25%;
+  list-style: none;
+}
+
+#gallery li img {
+  width: 100%;
+}
+
 /* Finish*/
