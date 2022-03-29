@@ -519,7 +519,7 @@
               <h3><i class="fa fa-instagram fa-3x text-color-grey" aria-hidden="true"></i
                 ></h3>
             </div>
-            <div id="instafeed"></div>
+            <ul id="insta-gallery"></ul>
           </div>
         </div>
       </div>
@@ -569,6 +569,8 @@
     <!--Instagram API-->
     <script type="text/javascript">
       var feed = new Instafeed({
+        target:'insta-gallery',
+        template:'<a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a>',
         accessToken: 'IGQVJVcFJvY3FhcDBiZA2hFNndkVUFWZA3VBRGliMUg5VjZABd2d3NXFvd2xINEtzVDJsZAE5PdnJJNWxBM3RiSnAzYzV0RU9yRGNzaVFBbjUzS0lGX3JDd1BRcGIyX1BhU2ZAuRldDNXdtLUlIUnFBWUhVdAZDZD'
       });
       feed.run();
