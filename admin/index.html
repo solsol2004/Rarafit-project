@@ -18,8 +18,7 @@
     <!-- Custom CSS -->
     <link href="../main.css" rel="stylesheet" />
     <link href="style.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style-orange.css" />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/style-orange.css" />
     <link
       href="../assets/plugin/font-awesome/css/font-awesome.min.css"
       rel="stylesheet"
@@ -36,15 +35,12 @@
               class="nav-toggler waves-effect waves-light d-block d-md-none"
               href="javascript:void(0)"
             >
-              <i class="ti-menu ti-close"></i>
+            <i class="fa fa-bars" aria-hidden="true"></i>
             </a>
-            <!-- ============================================================== -->
-            <!-- Logo -->
-            <!-- ============================================================== -->
             <a class="navbar-brand" href="index.html">
               <b class="logo-icon">
-                <img
-                  src="../assets/img/icon-rarafit.png"
+                <img class="mini-logo"
+                  src="../assets/img/logo-vertical.png"
                   alt="homepage"
                   class="dark-logo"
                 />
@@ -118,7 +114,7 @@
 
 
                 <!-- Schedule section start -->
-      <section class="fit_schedule_wrapper bg_second shap pt_100 pb_150">
+      <section class="fit_schedule_wrapper bg_second shap pb_150">
         <div class="container">
           <div class="row">
             <div
@@ -127,76 +123,93 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
+            <div class="col-lg-2 col-md-0 col-sm-0 col-xs-0"></div>
+            <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
               <div class="schedl_time_table">
                 <div class="table-responsive text-center">
                   <table class="">
                     <thead>
                       <tr>
                         <th>&nbsp;</th>
-                        <th class="text-center">6:00 - 7:00</th>
-                        <th class="text-center">8:00 - 10:00</th>
-                        <th class="text-center">17:00 - 19:00</th>
-                        <th class="text-center">19:00 - 20:30</th>
-                        <th class="text-center">21:00 - 22:00</th>
+                        <th class="text-center">Mon</th>
+                        <th class="text-center">Tue</th>
+                        <th class="text-center">Wed</th>
+                        <th class="text-center">Thu</th>
+                        <th class="text-center">Fri</th>
+                        <th class="text-center">Sat</th>
+                        <th class="text-center">Sun</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td><h4>Monday</h4></td>
-                        <td>그룹 수업<span>강사 - RARA</span></td>
-                        <td>개인 수업<span>강사 - Sujin</span></td>
+                      <tr class="schedule-edit">
+                        <td><h2>6:00 -<br> 7:00</h2></td>
+                        <td>그룹 수업<span>RARA</span></td>
+                        <td>개인 수업<span>Sujin</span></td>
                         <td>&nbsp;</td>
-                        <td>개인 수업<span>강사 Hannah </span></td>
-                        <td>그룹 수업<span>강사 - RARA</span></td>
+                        <td>개인 수업<span>Hannah </span></td>
+                        <td>그룹 수업<span>RARA</span></td>
+                        <td>개인 수업<span>Hannah </span></td>
+                        <td>그룹 수업<span>RARA</span></td>
                       </tr>
                       <tr>
-                        <td><h4>Tuesday</h4></td>
-                        <td>개인 수업<span>강사 - Sujin</span></td>
+                        <td><h2>7:00 -<br> 8:00</h2></td>
+                        <td>개인 수업<span>Sujin</span></td>
                         <td>&nbsp;</td>
-                        <td>그룹 수업<span>강사 - RARA</span></td>
+                        <td>그룹 수업<span>RARA</span></td>
                         <td>&nbsp;</td>
-                        <td>개인 수업<span>강사 - Sujin</span></td>
+                        <td>개인 수업<span>Sujin</span></td>
+                        <td>&nbsp;</td>
+                        <td>그룹 수업<span>RARA</span></td>
                       </tr>
                       <tr>
-                        <td><h4>Wednesday</h4></td>
-                        <td>특별 수업<span>강사 - Hannah</span></td>
-                        <td>개인 수업<span>강사 - Sujin</span></td>
+                        <td><h2>8:00 -<br> 9:00</h2></td>
+                        <td>특별 수업<span>Hannah</span></td>
+                        <td>개인 수업<span>Sujin</span></td>
                         <td>&nbsp;</td>
-                        <td>개인 수업<span>강사 - Sujin</span></td>
-                        <td>특별 수업<span>강사 - Hannah</span></td>
+                        <td>개인 수업<span>Sujin</span></td>
+                        <td>특별 수업<span>Hannah</span></td>
+                        <td>&nbsp;</td>
+                        <td>그룹 수업<span>RARA</span></td>
                       </tr>
                       <tr>
-                        <td><h4>Thursday</h4></td>
+                        <td><h2>9:00 -<br> 10:00</h2></td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
-                        <td>그룹 수업<span>강사 - RARA</span></td>
+                        <td>그룹 수업<span>RARA</span></td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
+                        <td>개인 수업<span>Sujin</span></td>
+                        <td>특별 수업<span>Hannah</span></td>
                       </tr>
                       <tr>
-                        <td><h4>Friday</h4></td>
-                        <td>그룹 수업<span>강사 - RARA</span></td>
-                        <td>개인 수업<span>강사 - Sujin</span></td>
+                        <td><h2>10:00 -<br> 11:00</h2></td>
+                        <td>그룹 수업<span>RARA</span></td>
+                        <td>개인 수업<span>Sujin</span></td>
                         <td>&nbsp;</td>
-                        <td>개인 수업<span>강사 - Sujin</span></td>
-                        <td>그룹 수업<span>강사 - RARA</span></td>
+                        <td>개인 수업<span>Sujin</span></td>
+                        <td>그룹 수업<span>RARA</span></td>
+                        <td>&nbsp;</td>
+                        <td>그룹 수업<span>RARA</span></td>
                       </tr>
                       <tr>
-                        <td><h4>Saturday</h4></td>
-                        <td>개인 수업<span>강사 - Sujin</span></td>
+                        <td><h2>11:00 -<br> 12:00</h2></td>
+                        <td>개인 수업<span>Sujin</span></td>
                         <td>&nbsp;</td>
-                        <td>그룹 수업<span>강사 - RARA</span></td>
-                        <td>그룹 수업<span>강사 - RARA</span></td>
+                        <td>그룹 수업<span>RARA</span></td>
+                        <td>그룹 수업<span>RARA</span></td>
                         <td>&nbsp;</td>
+                        <td>개인 수업<span>Sujin</span></td>
+                        <td>그룹 수업<span>RARA</span></td>
                       </tr>
                       <tr>
-                        <td><h4>Sunday</h4></td>
-                        <td>특별 수업<span>강사 - Hannah</span></td>
+                        <td><h2>12:00 -<br> 13:00</h2></td>
+                        <td>특별 수업<span>Hannah</span></td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
-                        <td>개인 수업<span>강사 - Sujin</span></td>
+                        <td>개인 수업<span>Sujin</span></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
                       </tr>
                     </tbody>
                   </table>
@@ -207,6 +220,36 @@
         </div>
       </section>
       <!-- Schedule section end -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
 
     <!-- ============================================================== -->
@@ -225,8 +268,8 @@
     <script src="sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="custom.min.js"></script>
-    <!--This page JavaScript -->
-    <script src="../assets/plugin/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <script src="schedule.js"></script>
     
   </body>
 </html>

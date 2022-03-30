@@ -31474,7 +31474,6 @@ label {
 }
 .topbar .top-navbar .navbar-header {
   line-height: 64px;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 .topbar .top-navbar .navbar-header .navbar-brand {
   display: flex;
@@ -31502,7 +31501,7 @@ label {
 .topbar .nav-toggler,
 .topbar .topbartoggler {
   color: #fff;
-  padding: 0 15px;
+  padding: 0;
 }
 .search-box .app-search {
   z-index: 110;
@@ -31663,7 +31662,7 @@ label {
 }
 .left-sidebar {
   position: absolute;
-  width: 250px;
+  width: 200px;
   height: 100%;
   top: 0;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
@@ -31697,7 +31696,7 @@ label {
   font-style: normal;
   width: 35px;
   line-height: 25px;
-  font-size: 20px;
+  font-size: 16px;
   color: #fff;
   display: inline-block;
   text-align: center;
@@ -37577,7 +37576,7 @@ html[dir="rtl"]
     .sidebar-item
     .sidebar-link
     i {
-    width: 10px;
+    width: 7px;
   }
   #main-wrapper[data-layout="horizontal"]
     .sidebar-nav

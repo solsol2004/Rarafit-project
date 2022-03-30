@@ -1967,22 +1967,24 @@ ul.footer_blogul {
   color: var(--white-color);
   text-align: center;
   width: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "NanumSquareRound";
 }
+
 .schedl_time_table table td span {
   display: block;
   font-family: "NanumSquareRound";
-  font-size: 16px;
+  margin-top: 2px;
+  font-size: 1vw;
   font-weight: 400;
   color: var(--txt-color);
 }
 .schedl_time_table table thead tr th {
-  padding: 33px 5px;
+  padding: 20px 0px;
 }
 .schedl_time_table table td,
 .schedl_time_table table th {
   border: 2px dashed var(--border-color);
-  padding: 20px 6px;
+  padding: 10px 4px;
   cursor: pointer;
   z-index: 0;
   position: relative;
@@ -1993,11 +1995,20 @@ ul.footer_blogul {
   vertical-align: bottom;
   border-bottom: 2px dashed var(--border-color);
   font-family: "Cafe24Shiningstar";
-  font-size: 26px;
+  font-size: 1.5em;
+  color: white;
 }
-.schedl_time_table table tbody tr td h4 {
-  font-size: 26px;
+
+.schedl_time_table table tbody tr td {
+  font-size: 1.3vw;
   text-transform: uppercase;
+  font-family: "NanumSquareRound";
+}
+
+.schedl_time_table table tbody tr td h4,
+.schedl_time_table table tbody tr td h3,
+.schedl_time_table table tbody tr td h2 {
+  color: white;
   font-family: "Cafe24Shiningstar";
 }
 .schedl_time_table table td:hover:after,

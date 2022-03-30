@@ -3353,4 +3353,8 @@ ul.text-color.capitalize.capitalize li {
   width: 100%;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Finish*/

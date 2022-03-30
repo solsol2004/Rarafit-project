@@ -48,28 +48,20 @@ Primary use:	Yoga, Health, Meditiation, Personal Trainer, Pilates, Fitness, Phys
 -------------------------------------------------------------------*/
 
 /* Bootstrap Css */
-@import 'assets/css/bootstrap.min.css';
+@import "assets/css/bootstrap.min.css";
 /* Font Awesome Css */
-@import 'assets/plugin/font-awesome/css/font-awesome.min.css';
+@import "assets/plugin/font-awesome/css/font-awesome.min.css";
 /* Owl-Carousel Css */
-@import 'assets/plugin/owl-carousel/css/owl.carousel.min.css';
+@import "assets/plugin/owl-carousel/css/owl.carousel.min.css";
 /* Megamenu Css */
-@import 'assets/plugin/megamenu/css/hover-dropdown-menu.css';
+@import "assets/plugin/megamenu/css/hover-dropdown-menu.css";
 /* Hover-Effect Css */
-@import 'assets/plugin/hover-effect/css/hover.css';
-/* Date-Picker Css */
-@import 'assets/plugin/date-picker/css/jquery-ui.min.css';
-/* Jquery-Ui Css */
-@import 'assets/plugin/jquery-ui/css/jquery-ui.css';
+@import "assets/plugin/hover-effect/css/hover.css";
 /* Fancybox Css */
-@import 'assets/plugin/fancybox/css/jquery.fancybox.css';
-/* Switcher Css */
-@import 'assets/plugin/switcher/css/switcher.css';
-/* linea-icon Css */
-@import 'assets/plugin/linea-icon/iconfont.css';
+@import "assets/plugin/fancybox/css/jquery.fancybox.css";
 /* Style Css */
-@import 'assets/css/style.css';
+@import "assets/css/style.css";
 /* Responsive Css */
-@import 'assets/css/responsive.css';
+@import "assets/css/responsive.css";
 /* Color Css */
-@import 'assets/css/color.css';
+@import "assets/css/color.css";
