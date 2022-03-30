@@ -3341,7 +3341,6 @@ ul.text-color.capitalize.capitalize li {
 
 #insta-gallery {
   width: 80%;
-  overflow-x: hidden;
 }
 
 #insta-gallery li {
@@ -3350,7 +3349,7 @@ ul.text-color.capitalize.capitalize li {
   float: left;
 }
 
-#gallery li img {
+#insta-gallery li img {
   width: 100%;
 }
 
