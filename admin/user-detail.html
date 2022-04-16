@@ -115,43 +115,110 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-5 align-self-center">
-                        <h4 class="page-title">상세 문의</h4>
+                        <h4 class="page-title">강사 정보</h4>
                     </div>
                 </div>
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">문의</h4>
-                                <span id="question-content"></span>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">문의 정보</h4>
-                            </div>
                             <div class="card-body bg-light">
                                 <div class="row text-center">
-                                    <div class="col-6 m-t-10 m-b-10">
-                                        <button id="erase-ticket" class="erase-ticket itg-button-3">완료</button>
+                                    <div class="col-2 m-t-10 m-b-10">
+                                        <button id="edit-user" class="erase-ticket itg-button-3">수정</button>
                                     </div>
+                                    <div class="col-2 m-t-10 m-b-10 text-left">
+                                        <button id="remove-user" class="erase-ticket itg-button-3">삭제</button>
+                                    </div>
+                                    <div class="col-8 m-t-10 m-b-10"></div>
+                                    
                                 </div>
                             </div>
+                            <div id="editing-instructor"
+                            class="auth-wrapper1 d-flex no-block justify-content-center align-items-center hidden">
+                             <div class="auth-box">
+                                 <div id="loginform">
+                                   <div class="logo">
+                                     <h2 class="marT10 font-medium">강사 정보 수정</h2>
+                                   </div>
+                                   <!-- Form -->
+                                   <div class="row">
+                                     <div class="col-12">
+                                       <div
+                                         class="form-horizontal m-t-20"
+                                         id="loginform"
+                                       >
+                                       <div class="input-group mb-3">
+                                         <div class="input-group-prepend">
+                                           <span class="input-group-text" id="basic-addon1"
+                                             ><i class="fa fa-user-o" aria-hidden="true"></i
+                                           ></span>
+                                         </div>
+                                         <input
+                                             id="name-renew"
+                                           type="text"
+                                           class="form-control form-control-lg"
+                                           placeholder="이름"
+                                           aria-label="Name"
+                                           aria-describedby="basic-addon1"
+                                         />
+                                       </div>
+                                         <div class="input-group mb-3">
+                                           <div class="input-group-prepend">
+                                             <span class="input-group-text" id="basic-addon1"
+                                               ><i class="fa fa-user-o" aria-hidden="true"></i
+                                             ></span>
+                                           </div>
+                                           <input
+                                             id="store-renew"
+                                             type="text"
+                                             class="form-control form-control-lg"
+                                             placeholder="지점명"
+                                             aria-label="Text"
+                                             aria-describedby="basic-addon1"
+                                           />
+                                         </div>
+                                         <div class="input-group mb-3">
+                                           <div class="input-group-prepend">
+                                             <span class="input-group-text" id="basic-addon2"
+                                               ><i class="fa fa-unlock-alt" aria-hidden="true"></i
+                                             ></span>
+                                           </div>
+                                           <input
+                                             id="pw-renew"
+                                             type="password"
+                                             class="form-control form-control-lg"
+                                             placeholder="비밀번호"
+                                             aria-label="Password"
+                                             aria-describedby="basic-addon1"
+                                           />
+                                         </div>
+                                         <div class="form-group text-center">
+                                           <div class="col-xs-12 p-b-20">
+                                             <button
+                                                 id="edit-instructor-list"
+                                               class="btn btn-block btn-lg btn-info"
+                                             >
+                                               변경 완료
+                                             </button>
+                                           </div>
+                                         </div>
+                                         </div>
+                                       </div>
+                                     </div>
+                                   </div>
+                                 </div>
+                               </div>
                             <div class="card-body">
-                                <h5 class="p-t-20">날짜</h5>
-                                <span id="question-date"></span>
-                                <h5 class="p-t-20">지점명</h5>
-                                <span id="question-store"></span>
-                                <h5 class="p-t-20">성함</h5>
-                                <span id="question-name"></span>
-                                <h5 class="m-t-30">연락처</h5>
-                                <span id="question-contact"></span>
-                                <br/>
+                                <div class="col-4"></div>
+                                <div class="col-8">
+                                    <h3 class="p-t-20">이름: <span id="user-name"></span></h3>
+                                    <h3 class="p-t-20">지점명: <span id="user-store"></span></h3>
+                                    <h3 class="p-t-20">비밀번호: <span id="user-pw"></span></h3>
+                                    <h3 class="p-t-20">날짜: <span id="user-date"></span></h3>
+                                    <br/>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -187,8 +254,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
     <script src="../assets/js/personal-firebase.js"></script>
-    <script src="js/ticket-detail.js"></script>
-
+    <script src="js/user-detail.js"></script>
     
 </body>
 

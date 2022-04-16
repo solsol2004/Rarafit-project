@@ -29,6 +29,7 @@
       <!-- ============================================================== -->
       <!-- Preloader - style you can find in spinners.css -->
       <!-- ============================================================== -->
+
       <!-- ============================================================== -->
       <!-- Login box.scss -->
       <!-- ============================================================== -->
@@ -48,7 +49,7 @@
                   src="../assets/img/logo-vertical.png"
                   alt="logo"
               /></span>
-              <h2 class="marT10 font-medium">관리자 로그인</h2>
+              <h2 class="marT10 font-medium">강사 계정 추가</h2>
             </div>
             <!-- Form -->
             <div class="row">
@@ -61,7 +62,7 @@
                       ></span>
                     </div>
                     <input
-                      id="email-login"
+                      id="user-email"
                       type="email"
                       class="form-control form-control-lg"
                       placeholder="이메일"
@@ -76,7 +77,7 @@
                       ></span>
                     </div>
                     <input
-                      id="pw-login"
+                      id="user-pw"
                       type="password"
                       class="form-control form-control-lg"
                       placeholder="비밀번호"
@@ -84,20 +85,39 @@
                       aria-describedby="basic-addon1"
                     />
                   </div>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon2"
+                        ><i class="fa fa-unlock-alt" aria-hidden="true"></i
+                      ></span>
+                    </div>
+                    <input
+                      id="user-name"
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="이름-지점명"
+                      aria-label="Name"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
                   <div class="form-group text-center">
                     <div class="col-xs-12 p-b-20">
                       <button
                         type="button"
-                        id="user-login"
+                        id="user-add"
                         class="btn btn-block btn-lg btn-info"
                       >
-                        로그인
+                        추가
                       </button>
                     </div>
                   </div>
                   <div class="form-group m-b-0 m-t-10">
                     <div class="col-sm-12 text-center">
-                      관리자 계정은 라라핏 본점으로 문의하세요
+                      계정 수정 및 삭제는
+                      <a
+                        href="https://console.firebase.google.com/project/rarafit-f3ec8/authentication/users?hl=ko"
+                        >여기</a
+                      >를 클릭하세요!
                     </div>
                   </div>
                 </div>
@@ -122,7 +142,22 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
     <script src="../assets/js/personal-firebase.js"></script>
-    <script src="js/admin-login.js"></script>
+    <script>
+      $("#user-add").click(function () {
+        var 이메일 = $("#user-email").val();
+        var 패스워드 = $("#user-pw").val();
+        var 이름 = $("#user-name").val();
+
+        firebase
+          .auth()
+          .createUserWithEmailAndPassword(이메일, 패스워드)
+          .then((result) => {
+            console.log(result.user);
+            result.user.updateProfile({ displayName: 이름 });
+            window.location.href = "index.html";
+          });
+      });
+    </script>
 
     <!-- ============================================================== -->
     <!-- This page plugin js -->

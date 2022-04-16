@@ -147,48 +147,65 @@
       </div>
     </div>
     <!--//=== breadcrumb-section Finesh ===//-->
+    
+    <div class="alert alert-danger hidden" role="alert">
+      <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> &nbsp; 아래 항목을 모두 입력하고 지점명을 선택해 주세요!</p>
+    </div>
+    
     <section class="padTB50">
       <div class="container">
         <div class="row">
           <div class="contact-text text-center padT20">
             <h5>문의 사항이 있으신가요?<br>아래에 글을 남겨주시면 신속하게 처리할 수 있도록 도와드리겠습니다.</h5>
           </div>
-          <form class="padT100">
+          <div class="container padT100">
             <div class="col-md-5 col-sm-6 col-xs-12">
               <div class="post-gray">
                 <input
+                  id="name"
                   type="text"
                   name="full name"
                   value=""
                   placeholder="성함"
+                  required
                 />
                 <input
+                  id="contact"
                   type="text"
                   name="contact"
                   value=""
                   placeholder="연락처"
+                  required
                 />
-                <input
-                  type="text"
-                  name="store"
-                  value=""
-                  placeholder="지점명"
-                />
+
+                <div class="input-group marT20 ">
+                  <div class="input-group-prepend">
+                    <button id="store-toggle" class="btn dropdown-toggle question-dropdown text-left" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>지점명</span><span class="caret"></span></button>
+                    <div class="dropdown-menu">
+                      <li class="dropdown-item"><a href="#">본점&nbsp;</a></li>
+                      <li class="dropdown-item"><a href="#">1호점</a></li>
+                      <li class="dropdown-item"><a href="#">2호점</a></li>
+                    </div>
+                  </div>
+                </div>
+                </ul>
               </div>
             </div>
             <div class="col-md-7 col-sm-6 col-xs-12">
               <div class="post-gray marT20">
                 <textarea
+                  id="question-detail"
                   placeholder="문의 내용"
                   rows="5"
                   cols="50"
+                  required
                 ></textarea>
               </div>
             </div>
             <div class="col-md-12 col-sm-6 col-xs-12 marT30">
-              <button type="submit" class="itg-button-3">전송</button>
+              <button type="submit" class="btn itg-button-3" id="send-question">전송</button>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </section>
@@ -232,43 +249,7 @@
       <!--//=== Footer finish ===//-->
     <!--//=== Finish ===//-->
    <!--Naver Map-->
-   <script>
-    var HOME_PATH = window.HOME_PATH || ".";
-
-    var cityhall = new naver.maps.LatLng(37.587282, 127.0766696),
-      map = new naver.maps.Map("contact-map", {
-        center: cityhall.destinationPoint(0, 500),
-        zoom: 15,
-      }),
-      marker = new naver.maps.Marker({
-        map: map,
-        position: cityhall,
-      });
-
-    var contentString = [
-      '<div class="iw_inner">',
-      "   <span>라라핏 필라테스</span>",
-      '       <img src="assets/img/logo-vertical.png" width="23" height="23" class="thumb" /><br />',
-      "   <p>서울 중랑구 동일로 678-1 / 2층<br /><br />",
-      "       010-6460-3363<br />",
-      "   </p>",
-      "</div>",
-    ].join("");
-
-    var infowindow = new naver.maps.InfoWindow({
-      content: contentString,
-    });
-
-    naver.maps.Event.addListener(marker, "click", function (e) {
-      if (infowindow.getMap()) {
-        infowindow.close();
-      } else {
-        infowindow.open(map, marker);
-      }
-    });
-
-    infowindow.open(map, marker);
-  </script>
+   <script src="assets/js/navermap.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -277,5 +258,16 @@
     <script src="assets/js/jquery.hover-dropdown-menu-addon.js"></script>
     <script src="assets/js/jquery.fancybox.pack.js"></script>
     <script src="assets/js/main.js"></script>
+
+     <!-- ============================================================== -->
+    <!-- Firebase -->
+    <!-- ============================================================== -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="assets/js/personal-firebase.js"></script>
+    <script src="assets/js/contact-upload.js"></script>
+
   </body>
 </html>

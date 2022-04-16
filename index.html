@@ -1,24 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-  <!--
-        **********************************************************************************************************
-        Copyright (c) 2017 DESIDEALS4U
-        ********************************************************************************************************** 
-        -->
+<html lang="ko">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!--[if IE]>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <![endif]-->
-    <meta name="keywords" content="HTML5 Template" />
+    <meta name="keywords" content="라라핏" />
     <meta name="description" content="라라핏 - 라라핏만의 색을 만들다" />
     <meta name="author" content="라라핏" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <!-- The above 3 meta tags must come first in the head; any other head content must come after these tags -->
     <title>라라핏 - 라라핏만의 색을 만들다</title>
     <!-- Favicon -->
     <link
@@ -34,12 +25,7 @@
     type="text/javascript"
     src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=6t20vxvqju"
   ></script>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <script src="assets/js/instafeed.min.js"></script>
   </head>
   <body>
     <!--//=== pre-loder ===//-->
@@ -255,7 +241,7 @@
                   <figcaption>
                     <div class="detail-text-sec">
                       <h3>필라테스</h3>
-                      <a href="service-detail.html"
+                      <a href="pilates.html"
                         >Read more<i
                           class="fa fa-angle-double-right pad5"
                           aria-hidden="true"
@@ -284,7 +270,7 @@
                   <figcaption>
                     <div class="detail-text-sec">
                       <h3>PT</h3>
-                      <a href="service-detail.html"
+                      <a href="pt.html"
                         >Read more<i
                           class="fa fa-angle-double-right pad5"
                           aria-hidden="true"
@@ -295,6 +281,8 @@
                 </figure>
               </div>
             </div>
+           </div>
+           <div class="row"> 
             <div class="col-md-3 col-sm-6 col-xs-12 pad0">
               <div class="details-section-boxs grid">
                 <figure class="effect-bubba">
@@ -302,7 +290,7 @@
                   <figcaption>
                     <div class="detail-text-sec">
                       <h3>PT</h3>
-                      <a href="service-detail.html"
+                      <a href="pt.html"
                         >Read more<i
                           class="fa fa-angle-double-right pad5"
                           aria-hidden="true"
@@ -340,7 +328,7 @@
                   <figcaption>
                     <div class="detail-text-sec">
                       <h3>키즈</h3>
-                      <a href="service-detail.html"
+                      <a href="kids.html"
                         >Read more<i
                           class="fa fa-angle-double-right pad5"
                           aria-hidden="true"
@@ -518,68 +506,7 @@
               <h3><i class="fa fa-instagram fa-3x text-color-grey" aria-hidden="true"></i
                 ></h3>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 table-padB">
-              <div class="img-effect baby-img">
-                <figure>
-                  <img src="assets/img/photo-gallary/16.jpg" alt="" />
-                  <figcaption class="img-effect-icon">
-                    <a
-                      href="assets/img/photo-gallary/gallary-popup-1.jpg"
-                      class="fancybox"
-                      data-fancybox-group="group"
-                      ><i class="fa fa-search" aria-hidden="true"></i
-                    ></a>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="detail-section">
-                <figure class="img-effect baby-img">
-                  <img src="assets/img/photo-gallary/19.jpg" alt="" />
-                  <figcaption class="img-effect-icon">
-                    <a
-                      href="assets/img/photo-gallary/gallary-popup-2.jpg"
-                      class="fancybox"
-                      data-fancybox-group="group"
-                      ><i class="fa fa-search" aria-hidden="true"></i
-                    ></a>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="img-effect baby-img">
-                <figure>
-                  <img src="assets/img/photo-gallary/18.jpg" alt="" />
-                  <figcaption class="img-effect-icon">
-                    <a
-                      href="assets/img/photo-gallary/gallary-popup-3.jpg"
-                      class="fancybox"
-                      data-fancybox-group="group"
-                      ><i class="fa fa-search" aria-hidden="true"></i
-                    ></a>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
-              <div class="respons-img padT30">
-                <div class="img-effect baby-img">
-                  <figure>
-                    <img src="assets/img/photo-gallary/17.jpg" alt="" />
-                    <figcaption class="img-effect-icon">
-                      <a
-                        href="assets/img/photo-gallary/gallary-popup-4.jpg"
-                        class="fancybox"
-                        data-fancybox-group="group"
-                        ><i class="fa fa-search" aria-hidden="true"></i
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
+            <div id="instafeed" class="row gallery"></div>
           </div>
         </div>
       </div>
@@ -626,51 +553,17 @@
     </section>
     <!--//=== Footer finish ===//-->
     <!--//=== Finish ===//-->
+    <!--Instagram API-->
+   <script src="assets/js/instagram.js"></script>
     <!--Naver Map-->
-    <script>
-      var HOME_PATH = window.HOME_PATH || ".";
-
-      var cityhall = new naver.maps.LatLng(37.587282, 127.0766696),
-        map = new naver.maps.Map("map", {
-          center: cityhall.destinationPoint(0, 500),
-          zoom: 15,
-        }),
-        marker = new naver.maps.Marker({
-          map: map,
-          position: cityhall,
-        });
-
-      var contentString = [
-        '<div class="iw_inner">',
-        "   <span>라라핏 필라테스</span>",
-        '       <img src="assets/img/logo-vertical.png" width="23" height="23" class="thumb" /><br />',
-        "   <p>서울 중랑구 동일로 678-1 / 2층<br />",
-        "       010-6460-3363<br />",
-        "   </p>",
-        "</div>",
-      ].join("");
-
-      var infowindow = new naver.maps.InfoWindow({
-        content: contentString,
-      });
-
-      naver.maps.Event.addListener(marker, "click", function (e) {
-        if (infowindow.getMap()) {
-          infowindow.close();
-        } else {
-          infowindow.open(map, marker);
-        }
-      });
-
-      infowindow.open(map, marker);
-    </script>
+    <script src="assets/js/navermap.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/jquery.hover-dropdown-menu-addon.js"></script>
     <script src="assets/js/jquery.fancybox.pack.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>

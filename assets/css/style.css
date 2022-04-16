@@ -101,6 +101,10 @@ h6 {
   text-align: center;
 }
 
+.text-left {
+  text-align: left !important;
+}
+
 address {
   font-size: small;
 }
@@ -109,21 +113,60 @@ address {
   color: white;
 }
 /* 3.2 Form Css */
+.input-group {
+  text-decoration: none;
+  border-style: none;
+  outline: 0;
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+}
+
+.input-group-prepend {
+  border-style: none;
+  outline: 0;
+}
+
+.dropdown-toggle:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#store-toggle {
+  outline: none;
+  border-style: none;
+}
 
 input[type="text"],
 input[type="email"],
 input[type="search"],
 input[type="password"],
+input[type="tel"],
 input[type="number"],
 select {
-  padding: 0 22px;
   border: 0;
+  padding: 0 22px;
   display: inline-block;
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  outline: none;
   height: 40px;
   font-size: 14px;
+}
+
+.question-dropdown span {
+  color: #777;
+  display: inline-block;
+}
+
+.question-dropdown span:first-child {
+  margin-right: 370px;
+}
+
+.dropdown-menu {
+  padding-bottom: 10px;
+}
+
+.dropdown-menu li a {
+  color: #000;
 }
 textarea {
   padding: 10px 20px;
@@ -3339,22 +3382,71 @@ ul.text-color.capitalize.capitalize li {
   height: 400px;
 }
 
-#insta-gallery {
-  width: 80%;
+.instaimg {
+  position: relative;
+  height: 0;
+  padding-top: 25%;
+  overflow: hidden;
 }
 
-#insta-gallery li {
-  width: 30%;
-  list-style: none;
-  float: left;
-}
-
-#insta-gallery li img {
+.instaimg img {
+  margin: 10px;
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
   width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.instaimg img:hover {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -webkit-opacity: 0.8;
 }
 
 .hidden {
   display: none;
+}
+
+.question-dropdown {
+  padding: 0 22px;
+  border: 0;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  outline: none;
+  height: 40px;
+  font-size: 14px;
+}
+
+.alert {
+  display: table;
+  width: 100%;
+}
+
+.alert span {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+/*767px 이하*/
+@media screen and (max-width: 767px) {
+  .instaimg {
+    padding-top: 30%;
+  }
+}
+/*768px ~ 991px*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .instaimg {
+    padding-top: 30%;
+  }
+}
+/*992px 이상*/
+@media screen and (min-width: 992px) {
+  .instaimg {
+    padding-top: 25%;
+  }
 }
 
 /* Finish*/

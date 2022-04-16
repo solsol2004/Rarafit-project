@@ -27240,7 +27240,7 @@ button.bg-light-warning:hover {
   .d-md-table-cell {
     display: table-cell !important;
   }
-  .d-md-flex {
+  .d-mauth-wrapper {
     display: flex !important;
   }
   .d-md-inline-flex {
@@ -31543,6 +31543,12 @@ label {
 .customizer {
   box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
 }
+
+.auth-wrapper1 .auth-box,
+.customizer {
+  box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+}
+
 .topbar .dropdown-menu .with-arrow {
   position: absolute;
   height: 10px;
@@ -31644,6 +31650,7 @@ label {
 }
 .page-breadcrumb {
   padding: 20px 20px 0;
+  position: relative;
 }
 .page-breadcrumb .page-title {
   margin-bottom: 0;
@@ -35510,6 +35517,12 @@ table.footable
 html[dir="rtl"] .dz-hidden-input {
   display: none;
 }
+
+.auth-wrapper1 #recoverform,
+html[dir="rtl"] .dz-hidden-input {
+  display: none;
+}
+
 .footable .pagination li.active a {
   z-index: 2;
   color: #fff;
@@ -36120,9 +36133,27 @@ html[dir="rtl"]
 }
 .auth-wrapper {
   min-height: 100vh;
-  position: relative;
+  background-color: rgba(0, 0, 0, 0);
 }
+
+.auth-wrapper1 {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  z-index: 5;
+  left: 300px;
+  top: -100px;
+}
+
 .auth-wrapper .auth-box {
+  background: #fff;
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+  margin: 10% 0;
+}
+
+.auth-wrapper1 .auth-box {
   background: #fff;
   padding: 20px;
   max-width: 400px;
@@ -36132,7 +36163,17 @@ html[dir="rtl"]
 .auth-wrapper .auth-box .logo {
   text-align: center;
 }
+.auth-wrapper1 .auth-box .logo {
+  text-align: center;
+}
 .auth-wrapper .auth-box.on-sidebar {
+  top: 0;
+  right: 0;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+}
+.auth-wrapper1 .auth-box.on-sidebar {
   top: 0;
   right: 0;
   height: 100%;
@@ -36147,6 +36188,14 @@ html[dir="rtl"]
   margin: 0;
   top: 0;
 }
+.auth-wrapper1 .auth-sidebar {
+  position: fixed;
+  height: 100%;
+  right: 0;
+  overflow: auto;
+  margin: 0;
+  top: 0;
+}
 @media (max-width: 767px) {
   .auth-wrapper .auth-sidebar {
     position: relative;
@@ -36154,7 +36203,16 @@ html[dir="rtl"]
     width: 100%;
     margin: 40px 0 60px;
   }
+  .auth-wrapper1 .auth-sidebar {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    margin: 40px 0 60px;
+  }
   .auth-wrapper .demo-text {
+    margin-top: 30px;
+  }
+  .auth-wrapper1 .demo-text {
     margin-top: 30px;
   }
   .email-table {
@@ -37674,4 +37732,8 @@ html[dir="rtl"]
   .do-block {
     display: block !important;
   }
+}
+
+.hidden {
+  display: none !important;
 }
