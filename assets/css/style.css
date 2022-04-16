@@ -1046,8 +1046,10 @@ span {
   position: absolute;
   width: 100%;
   height: 100%;
-  min-width: 100%;
-  min-height: 100%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-position: center;
   top: 0;
