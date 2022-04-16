@@ -3435,17 +3435,26 @@ ul.text-color.capitalize.capitalize li {
   .instaimg {
     padding-top: 30%;
   }
+  #gap-changing {
+    height: 50px;
+  }
 }
 /*768px ~ 991px*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .instaimg {
     padding-top: 30%;
   }
+  #gap-changing {
+    height: 50px;
+  }
 }
 /*992px 이상*/
 @media screen and (min-width: 992px) {
   .instaimg {
     padding-top: 25%;
+  }
+  #gap-changing {
+    height: 100px;
   }
 }
 
