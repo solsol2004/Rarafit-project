@@ -105,6 +105,10 @@ h6 {
   text-align: left !important;
 }
 
+.text-right {
+  text-align: right !important;
+}
+
 address {
   font-size: small;
 }
@@ -3428,6 +3432,44 @@ ul.text-color.capitalize.capitalize li {
   display: table-cell;
   vertical-align: middle;
   font-size: 15px;
+}
+
+.schedule-row {
+  border-bottom: 1px solid #96969630;
+}
+
+.schedule-row div {
+  color: rgb(53, 53, 53);
+}
+
+.schedule-center {
+  display: flex;
+  justify-content: center;
+}
+
+.schedule-btn {
+  padding: 6px 10px;
+  background: #a76b6b;
+  border: 0;
+  border-radius: 20px;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+
+.schedule-btn:hover {
+  background-color: rgb(199, 194, 194);
+}
+
+.schedule-time {
+  font-size: 1.3vw;
 }
 
 /*767px 이하*/
