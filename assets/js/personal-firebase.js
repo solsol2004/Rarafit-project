@@ -3,12 +3,12 @@ var firebaseDatabase; //파이어베이스 db 모듈 전역변수
 var userInfo;
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD8IsrLJZgSNSTO9jhiGLLOOpD9VNKd9YA",
-  authDomain: "rarafit-f3ec8.firebaseapp.com",
-  projectId: "rarafit-f3ec8",
-  storageBucket: "rarafit-f3ec8.appspot.com",
-  messagingSenderId: "749235091196",
-  appId: "1:749235091196:web:9173fdf4ababa0d9a38979",
+  apiKey: "AIzaSyBaz5ArZkXO3ArY22XB2QyDlQGfXFkRqOg",
+  authDomain: "rarafit-f19d6.firebaseapp.com",
+  projectId: "rarafit-f19d6",
+  storageBucket: "rarafit-f19d6.appspot.com",
+  messagingSenderId: "1094120594468",
+  appId: "1:1094120594468:web:5e933b8e5f578cdc418cb1",
 };
 firebase.initializeApp(firebaseConfig);
 firebaseEmailAuth = firebase.auth();

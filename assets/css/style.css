@@ -3480,6 +3480,30 @@ ul.text-color.capitalize.capitalize li {
   font-size: 13px;
 }
 
+.add-button {
+  padding: 5px 20px;
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  outline: none;
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+.add-button:hover {
+  color: #fff;
+}
+
+.closeBtn {
+  margin-left: 150px;
+}
 /*767px 이하*/
 @media screen and (max-width: 767px) {
   .instaimg {

@@ -8,10 +8,9 @@ db.collection("instructors")
   .get()
   .then((result) => {
     console.log(result.data());
-    $("#user-name").html(result.data().이름);
-    $("#user-store").html(result.data().지점명);
-    $("#user-pw").html(result.data().비밀번호);
-    $("#user-date").html(result.data().날짜);
+    $("#current-schedule-time").html(result.data().날짜);
+    $("#current-schedule-name").html(result.data().수업명);
+    $("#current-schedule-instructor").html(result.data().강사명);
   });
 
 $("#edit-instructor-list").click(function () {
