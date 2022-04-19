@@ -38,3 +38,9 @@ $(".sat").click(function () {
     "hidden"
   );
 });
+
+$(".closeBtn").click(function () {
+  $(
+    ".sat-table,.tue-table,.wed-table,.thu-table,.fri-table,.mon-table"
+  ).addClass("hidden");
+});
