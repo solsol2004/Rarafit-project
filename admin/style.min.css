@@ -36151,7 +36151,7 @@ html[dir="rtl"]
   background-color: rgba(0, 0, 0, 0);
   position: fixed;
   z-index: 5;
-  left: 300;
+  margin-right: 10vw;
 }
 
 .auth-wrapper2 {
