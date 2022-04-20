@@ -66,19 +66,19 @@
               <li class="sidebar-item">
                 <ul>
                   <li class="sidebar-item">
-                    <a href="index.html" class="sidebar-link">
+                    <a href="pilates-schedule.html" class="sidebar-link">
                       <i class="fa fa-pencil" aria-hidden="true"></i>
                       <span> 필라테스 </span>
                     </a>
                   </li>
                   <li class="sidebar-item">
-                    <a href="index2.html" class="sidebar-link">
+                    <a href="pt-schedule.html" class="sidebar-link">
                       <i class="fa fa-pencil" aria-hidden="true"></i>
                       <span class="hide-menu"> PT </span>
                     </a>
                   </li>
                   <li class="sidebar-item">
-                    <a href="index3.html" class="sidebar-link">
+                    <a href="kids-schedule.html" class="sidebar-link">
                       <i class="fa fa-pencil" aria-hidden="true"></i>
                       <span class="hide-menu"> 키즈 </span>
                     </a>
@@ -107,633 +107,129 @@
               </li>
         </div>
       </aside>
-      <!-- ============================================================== -->
-      <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-      <!-- ============================================================== -->
-      <div class="page-wrapper align-items-center">
+      <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
         <div class="page-breadcrumb">
           <div class="row">
-            <div class="col-6 align-self-center">
-              <h4 class="page-title">스케쥴 관리</h4>
+            <div class="col-5 align-self-center">
+              <h4 class="text-black font-20">대시보드</h4>
             </div>
+            <div class="col-7 align-self-center"> </div>
           </div>
         </div>
-
-       <!-- ============================================================== -->
-      <!-- Add schedule buttons  -->
-      <!-- ============================================================== -->
-        <div
-        class="auth-wrapper1 d-flex no-block justify-content-center align-items-center mon-table hidden"
-      
-      >
-        <div class="auth-box">
-          <div>
-            <div class="logo">
-              <button class="add-button closeBtn"><i class="fa fa-times fa-xl" aria-hidden="true"></i></button>
-              <h2 class="marT10 text-black">월요일 일정 추가</h2>
-            </div>
-            <!-- Form -->
-            <div class="row">
-              <div class="col-12">
-                <div class="form-horizontal m-t-20">
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"
-                        ><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-                    </div>
-                    <input
-                      type="text"
-                      class="form-control form-control-lg mon-schedule-time"
-                      placeholder="시간"
-                      aria-label="Time"
-                      aria-describedby="basic-addon1"
-                    />
-                  </div>
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"
-                        ><i class="fa fa-sticky-note-o" aria-hidden="true"></i></i
-                      ></span>
-                    </div>
-                    <input
-                      type="text"
-                      class="form-control form-control-lg mon-schedule-class"
-                      placeholder="수업명"
-                      aria-label="Class"
-                      aria-describedby="basic-addon1"
-                    />
-                  </div>
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"
-                        ><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
-                    </div>
-                    <input
-                      type="text"
-                      class="form-control form-control-lg mon-schedule-instructor"
-                      placeholder="강사명"
-                      aria-label="Name"
-                      aria-describedby="basic-addon1"
-                    />
-                  </div>
-                  <div class="form-group text-center">
-                    <div class="col-xs-12 p-b-20">
-                      <button
-                        type="button"
-                        class="btn btn-block btn-lg btn-info monday-form-button"
-                      >
-                        추가
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-      class="auth-wrapper1 d-flex no-block justify-content-center align-items-center tue-table hidden"
-    
-    >
-      <div class="auth-box">
-        <div>
-          <div class="logo">
-            <button class="add-button closeBtn"><i class="fa fa-times fa-xl" aria-hidden="true"></i></button>
-            <h2 class="marT10 text-black">화요일 일정 추가</h2>
-          </div>
-          <!-- Form -->
-          <div class="row">
-            <div class="col-12">
-              <div class="form-horizontal m-t-20">
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"
-                      ><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-                  </div>
-                  <input
-                    type="text"
-                    class="form-control form-control-lg tue-schedule-time"
-                    placeholder="시간"
-                    aria-label="Time"
-                    aria-describedby="basic-addon1"
-                  />
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"
-                      ><i class="fa fa-sticky-note-o" aria-hidden="true"></i></i
-                    ></span>
-                  </div>
-                  <input
-                    type="text"
-                    class="form-control form-control-lg tue-schedule-class"
-                    placeholder="수업명"
-                    aria-label="Class"
-                    aria-describedby="basic-addon1"
-                  />
-                </div>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"
-                      ><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
-                  </div>
-                  <input
-                    type="text"
-                    class="form-control form-control-lg tue-schedule-instructor"
-                    placeholder="강사명"
-                    aria-label="Name"
-                    aria-describedby="basic-addon1"
-                  />
-                </div>
-                <div class="form-group text-center">
-                  <div class="col-xs-12 p-b-20">
-                    <button
-                      type="button"
-                      class="btn btn-block btn-lg btn-info tuesday-form-button"
-                    >
-                      추가
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-    class="auth-wrapper1 d-flex no-block justify-content-center align-items-center wed-table hidden"
-   
-  >
-    <div class="auth-box">
-      <div>
-        <div class="logo">
-          <button class="add-button closeBtn"><i class="fa fa-times fa-xl" aria-hidden="true"></i></button>
-          <h2 class="marT10 text-black">수요일 일정 추가</h2>
-        </div>
-        <!-- Form -->
-        <div class="row">
-          <div class="col-12">
-            <div class="form-horizontal m-t-20">
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-                </div>
-                <input
-                  type="text"
-                  class="form-control form-control-lg wed-schedule-time"
-                  placeholder="시간"
-                  aria-label="Time"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fa fa-sticky-note-o" aria-hidden="true"></i></i
-                  ></span>
-                </div>
-                <input
-                  type="text"
-                  class="form-control form-control-lg wed-schedule-class"
-                  placeholder="수업명"
-                  aria-label="Class"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
-                </div>
-                <input
-                  type="text"
-                  class="form-control form-control-lg wed-schedule-instructor"
-                  placeholder="강사명"
-                  aria-label="Name"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-              <div class="form-group text-center">
-                <div class="col-xs-12 p-b-20">
-                  <button
-                    type="button"
-                    class="btn btn-block btn-lg btn-info wednesday-form-button"
-                  >
-                    추가
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    class="auth-wrapper1 d-flex no-block justify-content-center align-items-center thu-table hidden"
-  
-  >
-    <div class="auth-box">
-      <div>
-        <div class="logo">
-          <button class="add-button closeBtn"><i class="fa fa-times fa-xl" aria-hidden="true"></i></button>
-          <h2 class="marT10 text-black">목요일 일정 추가</h2>
-        </div>
-        <!-- Form -->
-        <div class="row">
-          <div class="col-12">
-            <div class="form-horizontal m-t-20">
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-                </div>
-                <input
-                  type="text"
-                  class="form-control form-control-lg thu-schedule-time"
-                  placeholder="시간"
-                  aria-label="Time"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fa fa-sticky-note-o" aria-hidden="true"></i></i
-                  ></span>
-                </div>
-                <input
-                  type="text"
-                  class="form-control form-control-lg thu-schedule-class"
-                  placeholder="수업명"
-                  aria-label="Class"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
-                </div>
-                <input
-                  type="text"
-                  class="form-control form-control-lg thu-schedule-instructor"
-                  placeholder="강사명"
-                  aria-label="Name"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-              <div class="form-group text-center">
-                <div class="col-xs-12 p-b-20">
-                  <button
-                    type="button"
-                    class="btn btn-block btn-lg btn-info thursday-form-button"
-                  >
-                    추가
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    class="auth-wrapper1 d-flex no-block justify-content-center align-items-center fri-table hidden"
-  
-  >
-    <div class="auth-box">
-      <div>
-        <div class="logo">
-          <button class="add-button closeBtn"><i class="fa fa-times fa-xl" aria-hidden="true"></i></button>
-          <h2 class="marT10 text-black">금요일 일정 추가</h2>
-        </div>
-        <!-- Form -->
-        <div class="row">
-          <div class="col-12">
-            <div class="form-horizontal m-t-20">
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-                </div>
-                <input
-                  type="text"
-                  class="form-control form-control-lg fri-schedule-time"
-                  placeholder="시간"
-                  aria-label="Time"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fa fa-sticky-note-o" aria-hidden="true"></i></i
-                  ></span>
-                </div>
-                <input
-                  type="text"
-                  class="form-control form-control-lg fri-schedule-class"
-                  placeholder="수업명"
-                  aria-label="Class"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"
-                    ><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
-                </div>
-                <input
-                  type="text"
-                  class="form-control form-control-lg fri-schedule-instructor"
-                  placeholder="강사명"
-                  aria-label="Name"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-              <div class="form-group text-center">
-                <div class="col-xs-12 p-b-20">
-                  <button
-                    type="button"
-                    class="btn btn-block btn-lg btn-info friday-form-button"
-                  >
-                    추가
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-  class="auth-wrapper1 d-flex no-block justify-content-center align-items-center sat-table hidden"
->
-  <div class="auth-box">
-    <div>
-      <div class="logo">
-        <button class="add-button closeBtn"><i class="fa fa-times fa-xl" aria-hidden="true"></i></button>
-        <h2 class="marT10 text-black">토요일 일정 추가</h2>
-      </div>
-      <!-- Form -->
-      <div class="row">
-        <div class="col-12">
-          <div class="form-horizontal m-t-20">
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text"
-                  ><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-              </div>
-              <input
-                type="text"
-                class="form-control form-control-lg sat-schedule-time"
-                placeholder="시간"
-                aria-label="Time"
-                aria-describedby="basic-addon1"
-              />
-            </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text"
-                  ><i class="fa fa-sticky-note-o" aria-hidden="true"></i></i
-                ></span>
-              </div>
-              <input
-                type="text"
-                class="form-control form-control-lg sat-schedule-class"
-                placeholder="수업명"
-                aria-label="Class"
-                aria-describedby="basic-addon1"
-              />
-            </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text"
-                  ><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
-              </div>
-              <input
-                type="text"
-                class="form-control form-control-lg sat-schedule-instructor"
-                placeholder="강사명"
-                aria-label="Name"
-                aria-describedby="basic-addon1"
-              />
-            </div>
-            <div class="form-group text-center">
-              <div class="col-xs-12 p-b-20">
-                <button
-                  type="button"
-                  class="btn btn-block btn-lg btn-info saturday-form-button"
-                >
-                  추가
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
-       <!-- ============================================================== -->
-      <!--Schedule list  -->
-      <!-- ============================================================== -->
-      
-
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 marB20">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                  <div class="col-11"><span>월요일 시간표</span></div>
-                  <div class="col-1">
-                  <div class="row"><button class="add-button mon"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button></div>
-                </div>
-              </div>
-                  <div class="table-responsive">
-                    <table
-                      class="table table-striped table-bordered marT10"
-                    >
-                      <thead>
-                        <tr>
-                          <th>시간</th>
-                          <th>수업명</th>
-                          <th>강사명</th>
-                          <th>삭제</th>
-                        </tr>
-                      </thead>
-                      <tbody class="monday-schedule">
-                      </tbody>
-                      
-                    </table>
-
-                  </div>
-                </div>
-              </div>
+          <!-- ============================================================== -->
+          <!-- Info box -->
+          <!-- ============================================================== -->
+          <div class="row marT30 marB20">
+            <div class="col-5 align-self-center">
+              <h4 class="font-14 font-weight-light text-black">스케쥴 관리</h4>
             </div>
-            <div class="col-12 marB20">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-11"><span>화요일 시간표</span></div>
-                    <div class="col-1">
-                    <div class="row"><button class="add-button tue"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button></div>
-                  </div>
-                </div>
-                  <div class="table-responsive">
-                    <table
-                      class="table table-striped table-bordered marT10"
-                    >
-                      <thead>
-                        <tr>
-                          <th>시간</th>
-                          <th>수업명</th>
-                          <th>강사명</th>
-                          <th>삭제</th>
-                        </tr>
-                      </thead>
-                      <tbody class="tuesday-schedule">
-                      </tbody>
-                      
-                    </table>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 marB20">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-11"><span>수요일 시간표</span></div>
-                    <div class="col-1">
-                    <div class="row"><button class="add-button wed"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button></div>
-                  </div>
-                </div>
-                  <div class="table-responsive">
-                    <table
-                      class="table table-striped table-bordered marT10"
-                    >
-                      <thead>
-                        <tr>
-                          <th>시간</th>
-                          <th>수업명</th>
-                          <th>강사명</th>
-                          <th>삭제</th>
-                        </tr>
-                      </thead>
-                      <tbody class="wednesday-schedule"> 
-                      </tbody>
-                      
-                    </table>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-12 marB20">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-11"><span>목요일 시간표</span></div>
-                    <div class="col-1">
-                    <div class="row"><button class="add-button thu"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button></div>
-                  </div>
-                </div>
-                  <div class="table-responsive">
-                    <table
-                      class="table table-striped table-bordered marT10"
-                    >
-                      <thead>
-                        <tr>
-                          <th>시간</th>
-                          <th>수업명</th>
-                          <th>강사명</th>
-                          <th>삭제</th>
-                        </tr>
-                      </thead>
-                      <tbody class="thursday-schedule">
-                      </tbody>
-                      
-                    </table>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 marB20">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-11"><span>금요일 시간표</span></div>
-                    <div class="col-1">
-                    <div class="row"><button class="add-button fri"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button></div>
-                  </div>
-                </div>
-                  <div class="table-responsive">
-                    <table
-                      class="table table-striped table-bordered marT10"
-                    >
-                      <thead>
-                        <tr>
-                          <th>시간</th>
-                          <th>수업명</th>
-                          <th>강사명</th>
-                          <th>삭제</th>
-                        </tr>
-                      </thead>
-                      <tbody class="friday-schedule">
-                      </tbody>
-                      
-                    </table>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 marB20">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-11"><span>토요일 시간표</span></div>
-                    <div class="col-1">
-                    <div class="row"><button class="add-button sat"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button></div>
-                  </div>
-                </div>
-                  <div class="table-responsive">
-                    <table
-                      class="table table-striped table-bordered marT10"
-                    >
-                      <thead>
-                        <tr>
-                          <th>시간</th>
-                          <th>수업명</th>
-                          <th>강사명</th>
-                          <th>삭제</th>
-                        </tr>
-                      </thead>
-                      <tbody class="saturday-schedule">
-                      </tbody>
-                      
-                    </table>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
+            <div class="col-7 align-self-center"> </div>
           </div>
+          <div class="card-group">
+            <!-- Card -->
+            <div class="card">
+              <div class="card-body">
+                <a href="pilates-schedule.html">
+                <div class="d-flex align-items-center">
+                  <div class="m-r-10">
+                    <span class="btn btn-circle btn-lg bg-danger">
+                      <i class="fa fa-diamond text-white" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div class="ml-auto">
+                    <h4 class="m-b-0 font-light font-14 text-black">필라테스</h4>
+                  </div>
+                </div>
+              </a>
+              </div>
+            </div>
+            <!-- Card -->
+            <!-- Card -->
+            <div class="card">
+              <div class="card-body">
+                <a href="pt-schedule.html">
+                <div class="d-flex align-items-center">
+                  <div class="m-r-10">
+                    <span class="btn btn-circle btn-lg btn-info">
+                      <i class="fa fa-heartbeat text-white" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div class="ml-auto">
+                    <h4 class="m-b-0 font-light font-14 text-black">PT</h4>
+                  </div>
+                </div>
+              </a>
+              </div>
+            </div>
+            <!-- Card -->
+            <!-- Card -->
+            <div class="card">
+              <div class="card-body">
+                <a href="kids-schedule.html">
+                <div class="d-flex align-items-center">
+                  <div class="m-r-10">
+                    <span class="btn btn-circle btn-lg bg-success">
+                      <i class="fa fa-child text-white" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div class="ml-auto">
+                    <h4 class="m-b-0 font-light font-14 text-black">키즈</h4>
+                  </div>
+                </div>
+              </a>
+              </div>
+            </div>
+            <!-- Card -->
+            <!-- Column -->
+          </div>
+          <!-- ============================================================== -->
+          <!-- Info box -->
+          <!-- ============================================================== -->
+  <!-- ============================================================== -->
+          <!-- Top Selliing Products -->
+          <!-- ============================================================== -->
+          <div class=" marT50 marB20">
+            <h4 class="font-14 font-weight-light text-black">문의내역</h4>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr class="bg-light text-left">
+                        <th>성함</th>
+                          <th>문의내용</th>
+                          <th>지점명</th>
+                          <th>연락처</th>
+                          <th>날짜</th>
+                          <th>완료</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-center">
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ============================================================== -->
+          <!-- Top Selliing Products -->
+          <!-- ============================================================== -->
+         
         </div>
       </div>
+ </div>
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
@@ -758,7 +254,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
     <script src="../assets/js/personal-firebase.js"></script>
-    <script src="js/pilates-schedule.js"></script>
-    <script src="../assets/js/schedule.js"></script>
+    <script src="js/ticket-list.js"></script>
+
 
 </html>

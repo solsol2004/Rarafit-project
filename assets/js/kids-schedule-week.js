@@ -1,5 +1,6 @@
 const db = firebase.firestore();
-db.collection("monday")
+db.collection("kids-schedule")
+  .where("요일", "==", "월요일")
   .get()
   .then((snapshot) => {
     snapshot.forEach((doc) => {
@@ -22,7 +23,8 @@ db.collection("monday")
     });
   });
 
-db.collection("tuesday")
+db.collection("kids-schedule")
+  .where("요일", "==", "화요일")
   .get()
   .then((snapshot) => {
     snapshot.forEach((doc) => {
@@ -44,7 +46,8 @@ db.collection("tuesday")
       $(".tue-table").prepend(day);
     });
   });
-db.collection("wednesday")
+db.collection("kids-schedule")
+  .where("요일", "==", "수요일")
   .get()
   .then((snapshot) => {
     snapshot.forEach((doc) => {
@@ -67,7 +70,8 @@ db.collection("wednesday")
     });
   });
 
-db.collection("thursday")
+db.collection("kids-schedule")
+  .where("요일", "==", "목요일")
   .get()
   .then((snapshot) => {
     snapshot.forEach((doc) => {
@@ -90,7 +94,8 @@ db.collection("thursday")
     });
   });
 
-db.collection("friday")
+db.collection("kids-schedule")
+  .where("요일", "==", "금요일")
   .get()
   .then((snapshot) => {
     snapshot.forEach((doc) => {
@@ -113,7 +118,8 @@ db.collection("friday")
     });
   });
 
-db.collection("saturday")
+db.collection("kids-schedule")
+  .where("요일", "==", "토요일")
   .get()
   .then((snapshot) => {
     snapshot.forEach((doc) => {

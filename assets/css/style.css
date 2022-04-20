@@ -141,6 +141,11 @@ address {
   border-style: none;
 }
 
+.class-toggle {
+  outline: auto;
+  border: 5px solid black;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="search"],

@@ -6,7 +6,9 @@ db.collection("questions")
       console.log(doc.data());
       const questions = `<tr>
                     <td>
-                      <span>${doc.data().성함}</span>
+                    <a href="ticket-detail.html?id=${doc.id}"
+                    class="font-medium link"
+                    >${doc.data().성함}</a>
                     </td>
                     <td>
                      <a href="ticket-detail.html?id=${doc.id}"
