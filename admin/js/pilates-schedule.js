@@ -3,23 +3,28 @@ db.collection("monday")
   .get()
   .then((snapshot) => {
     snapshot.forEach((doc) => {
-      console.log(doc.data());
       const monday = `<tr>
                     <td>
-                    <a href="user-detail.html?id=${doc.id}"
+                    <a href="date-scheudle/monday-schedule.html?id=${doc.id}"
                     class="font-medium link"
                     >${doc.data().시간}</a>
                     </td>
                     <td>
-                     <a href="user-detail.html?id=${doc.id}"
+                     <a href="date-scheudle/monday-schedule.html?id=${doc.id}"
                         class="font-medium link"
                         >${doc.data().수업명}</a
                       >
                     </td>
                     <td>
-                      <a href="user-detail.html?id=${
+                      <a href="date-scheudle/monday-schedule.html?id=${
                         doc.id
                       }" class="font-bold link">${doc.data().강사명}</a>
+                    </td>
+                    <td>
+                      <div>
+                      <button class="delete-row">삭제</button>
+                      <span class="deleteBtn-id">${doc.id}</span>
+                      </div>
                     </td>
                   </tr>`;
 
@@ -47,6 +52,9 @@ db.collection("tuesday")
                         doc.id
                       }" class="font-bold link">${doc.data().강사명}</a>
                     </td>
+                    <td>
+                      <button>삭제</button>
+                    </td>
                   </tr>`;
 
       $(".tuesday-schedule").prepend(tuesday);
@@ -72,6 +80,9 @@ db.collection("wednesday")
                       <a href="ticket-detail.html?id=${
                         doc.id
                       }" class="font-bold link">${doc.data().강사명}</a>
+                    </td>
+                    <td>
+                      <button>삭제</button>
                     </td>
                   </tr>`;
 
@@ -99,6 +110,9 @@ db.collection("thursday")
                         doc.id
                       }" class="font-bold link">${doc.data().강사명}</a>
                     </td>
+                    <td>
+                      <button>삭제</button>
+                    </td>
                   </tr>`;
 
       $(".thursday-schedule").prepend(thursday);
@@ -125,6 +139,9 @@ db.collection("friday")
                         doc.id
                       }" class="font-bold link">${doc.data().강사명}</a>
                     </td>
+                    <td>
+                      <button>삭제</button>
+                    </td>
                   </tr>`;
 
       $(".friday-schedule").prepend(friday);
@@ -150,6 +167,9 @@ db.collection("saturday")
                       <a href="ticket-detail.html?id=${
                         doc.id
                       }" class="font-bold link">${doc.data().강사명}</a>
+                    </td>
+                    <td>
+                      <button class="remove-row">삭제</button>
                     </td>
                   </tr>`;
 

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Favicon icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/img/favicon.ico"
+    />
+    <title>라라핏 - 라라핏만의 색을 만들다</title>
+    <!-- Custom CSS -->
+    <link href="../main.css" rel="stylesheet" />
+    <link href="style.min.css" rel="stylesheet" />
+    <link
+      href="../assets/plugin/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+<body>
+      <div id="main-wrapper">
+        <header class="topbar">
+          <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+            <div class="navbar-header">
+              <!-- This is for the sidebar toggle which is visible on mobile only -->
+              <a
+                class="nav-toggler waves-effect waves-light d-block d-md-none"
+                href="javascript:void(0)"
+              >
+              <i class="fa fa-bars" aria-hidden="true"></i>
+              </a>
+              <a class="navbar-brand" href="index.html">
+                <b class="logo-icon">
+                  <img class="mini-logo"
+                    src="../assets/img/logo-vertical.png"
+                    alt="homepage"
+                    class="dark-logo"
+                  />
+              </a>
+            </div>
+          </nav>
+        </header>
+      <!-- ============================================================== -->
+      <!-- End Logo -->
+      <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+          <!-- Sidebar scroll-->
+          <div class="scroll-sidebar">
+            <!-- Sidebar navigation-->
+            <nav class="sidebar-nav">
+              <ul id="sidebarnav">
+                <!-- User Profile-->
+                <li class="nav-small-cap">
+                  <i class="mdi"></i>
+                  <span>스케쥴</span>
+                </li>
+                <li class="sidebar-item">
+                  <ul>
+                    <li class="sidebar-item">
+                      <a href="index.html" class="sidebar-link">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <span> 필라테스 </span>
+                      </a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="index2.html" class="sidebar-link">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <span class="hide-menu"> PT </span>
+                      </a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="index3.html" class="sidebar-link">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <span class="hide-menu"> 키즈 </span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+  
+                <li class="sidebar-item padT50">
+                  <ul>
+                    <li class="sidebar-item">
+                      <a href="ticket-list.html" class="sidebar-link">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        <span> 문의 내역 </span>
+                      </a>
+                  </ul>
+                </li>
+
+                <li class="sidebar-item padT10">
+                  <ul>
+                    <li class="sidebar-item">
+                      <a href="user-list.html" class="sidebar-link">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                        <span> 강사 관리 </span>
+                      </a>
+                  </ul>
+                </li>
+          </div>
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-5 align-self-center">
+                        <h4 class="page-title">강사 정보</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body bg-light">
+                                <div class="row text-center">
+                                    <div class="col-2 m-t-10 m-b-10">
+                                        <button id="edit-user" class="erase-ticket itg-button-3">수정</button>
+                                    </div>
+                                    <div class="col-2 m-t-10 m-b-10 text-left">
+                                        <button id="remove-user" class="erase-ticket itg-button-3">삭제</button>
+                                    </div>
+                                    <div class="col-8 m-t-10 m-b-10"></div>
+                                    
+                                </div>
+                            </div>
+                            <div id="editing-instructor"
+                            class="auth-wrapper2 d-flex no-block justify-content-center align-items-center hidden">
+                             <div class="auth-box">
+                                 <div id="loginform">
+                                   <div class="logo">
+                                     <h2 class="marT10 font-medium">스케쥴 일정 수정</h2>
+                                   </div>
+                                   <!-- Form -->
+                                   <div class="row">
+                                     <div class="col-12">
+                                       <div
+                                         class="form-horizontal m-t-20"
+                                         id="loginform"
+                                       >
+                                       <div class="input-group mb-3">
+                                         <div class="input-group-prepend">
+                                           <span class="input-group-text" id="basic-addon1"
+                                             ><i class="fa fa-user-o" aria-hidden="true"></i
+                                           ></span>
+                                         </div>
+                                         <input
+                                             id="time-renew"
+                                           type="text"
+                                           class="form-control form-control-lg"
+                                           placeholder="시간"
+                                           aria-label="Time"
+                                           aria-describedby="basic-addon1"
+                                         />
+                                       </div>
+                                         <div class="input-group mb-3">
+                                           <div class="input-group-prepend">
+                                             <span class="input-group-text" id="basic-addon1"
+                                               ><i class="fa fa-user-o" aria-hidden="true"></i
+                                             ></span>
+                                           </div>
+                                           <input
+                                             id="class-renew"
+                                             type="text"
+                                             class="form-control form-control-lg"
+                                             placeholder="수업명"
+                                             aria-label="Text"
+                                             aria-describedby="basic-addon1"
+                                           />
+                                         </div>
+                                         <div class="input-group mb-3">
+                                           <div class="input-group-prepend">
+                                             <span class="input-group-text" id="basic-addon2"
+                                               ><i class="fa fa-unlock-alt" aria-hidden="true"></i
+                                             ></span>
+                                           </div>
+                                           <input
+                                             id="instructor-renew"
+                                             type="password"
+                                             class="form-control form-control-lg"
+                                             placeholder="강사"
+                                             aria-label="Password"
+                                             aria-describedby="basic-addon1"
+                                           />
+                                         </div>
+                                         <div class="form-group text-center">
+                                           <div class="col-xs-12 p-b-20">
+                                             <button
+                                                 id="edit-instructor-list"
+                                               class="btn btn-block btn-lg btn-info"
+                                             >
+                                               변경 완료
+                                             </button>
+                                           </div>
+                                         </div>
+                                         </div>
+                                       </div>
+                                     </div>
+                                   </div>
+                                 </div>
+                               </div>
+                            <div class="card-body">
+                                <div class="col-4"></div>
+                                <div class="col-8">
+                                    <h3 class="p-t-20">시간: <span id="current-schedule-time"></span></h3>
+                                    <h3 class="p-t-20">수업명: <span id="current-schedule-name"></span></h3>
+                                    <h3 class="p-t-20">강사명: <span id="current-schedule-instructor"></span></h3>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- apps -->
+    <script src="js/app.min.js"></script>
+    <script src="js/app.init.light-sidebar.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <script src="js/erase-ticket.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!--This page JavaScript -->
+
+       <!-- ============================================================== -->
+    <!-- Firebase -->
+    <!-- ============================================================== -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="../assets/js/personal-firebase.js"></script>
+    <script src="js/user-detail.js"></script>
+    
+</body>
+
+</html>
