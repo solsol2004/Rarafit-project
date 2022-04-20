@@ -3507,7 +3507,7 @@ ul.text-color.capitalize.capitalize li {
 }
 
 .closeBtn {
-  margin-left: 150px;
+  margin-left: 300px;
 }
 /*767px 이하*/
 @media screen and (max-width: 767px) {
