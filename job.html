@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+        **********************************************************************************************************
+        Copyright (c) 2017 DESIDEALS4U
+        ********************************************************************************************************** 
+        -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <![endif]-->
+    <meta name="keywords" content="HTML5 Template" />
+    <meta
+      name="description"
+      content="LOTUSS -  Multipurpose  HTML Template For Yoga, Gym & Fiteness"
+    />
+    <meta name="author" content="desideals4u.com" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- The above 3 meta tags must come first in the head; any other head content must come after these tags -->
+    <title>라라핏 - 라라핏만의 색을 만들다</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <!-- Master Css -->
+    <link href="main.css" rel="stylesheet" />
+    <link href="assets/css/color.css" rel="stylesheet" id="colors" />
+    <script
+    type="text/javascript"
+    src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=0hu2kwgxt2"
+  ></script>
+  </head>
+  <body>
+    <!--//=== pre-loder ===//-->
+    <div class="spinner-wrapper">
+      <div class="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+        <h3>Loading</h3>
+      </div>
+    </div>
+    <!--//=== pre-loder Finesh ===//-->
+    <!--//=== Header Section ===//-->
+    <header class="yoga-menu">
+      <div id="main-menu" class="wa-main-menu">
+        <!-- Menu -->
+        <div class="wathemes-menu relative">
+          <!-- navbar -->
+          <div class="navbar navbar-default theme-bg mar0" role="navigation">
+            <div class="container-fluid">
+              <div class="col-md-12">
+                <div class="navbar-header">
+                  <div class="yoga-menu-1">
+                      <!-- Button For Responsive toggle -->
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <span class="sr-only">Toggle navigation</span> 
+                                        <span class="icon-bar"></span> 
+                                        <span class="icon-bar"></span> 
+                                        <span class="icon-bar"></span>
+                                        </button> 
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                      <figure>
+                        <img
+                          class="rarafit-logo hidden-xs"
+                          src="assets/img/icon-rarafit.png"
+                          alt="Site Logo"
+                        />
+                        <img
+                          class="hidden-md hidden-lg hidden-sm"
+                          src="assets/img/icon-rarafit.png"
+                          alt="Site Logo"
+                        />
+                      </figure>
+                    </a>
+                  </div>
+                </div>
+                <!-- Navbar Collapse -->
+                <div class="navbar-collapse collapse yoga-menu-section">
+                  <!-- nav -->
+                  <ul class="nav navbar-nav menu-section">
+                    <li><a href="about-us.html">브랜드 소개</a></li>
+                    <li>
+                      <a href="pilates.html">필라테스</a>
+                    </li>
+                    <li>
+                      <a href="pt.html">GX</a>
+                    </li>
+                    <li>
+                      <a href="kids.html">키즈</a>
+                    </li>
+                    <li>
+                      <a href="job.html">채용문의</a>
+                    </li>
+                    <li><a href="contact.html">고객상담</a></li>
+                    <li><a href="admin/admin-login.html">관리자</a></li>
+                  </ul>
+                  
+                  <div class="insta-icon s-icon">
+                    <a href="https://www.instagram.com/rarafit1/" id="go-instagram"
+                      ><i class="fa fa-instagram fa-lg" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- navbar-collapse -->
+              </div>
+              <!-- col-md-12 -->
+            </div>
+            <!-- container -->
+          </div>
+          <!-- navbar -->
+        </div>
+        <!--  Menu -->
+      </div>
+    </header>
+    <!--//=== Header Section Finish ===//-->
+    <!--//=== breadcrumb-section ===//-->
+    <div class="detail-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="special-style special-style-dark dark-overlay-1 col-md-12"
+          >
+            <div
+              class="bg-image"
+              style="background-image: url('assets/img/room.jpg'); background-position: center;"
+            ></div>
+          </div>
+          <div class="breadcrumb-section text-center padT200 padB100">
+            <h3>Apply us</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--//=== breadcrumb-section Finesh ===//-->
+    
+    <div class="alert alert-danger hidden" role="alert">
+      <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> &nbsp; 아래 항목을 모두 입력하고 희망부문을 선택해 주세요!</p>
+    </div>
+    
+    <section class="padTB50">
+      <div class="container">
+        <div class="row">
+          <div class="contact-text text-center padT20">
+            <h5>라라핏에 지원해주셔서 감사합니다. </br>귀하의 정보를 아래에 입력해주시면 확인 후 연락드리겠습니다.</h5>
+          </div>
+          <div class="container padT100">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="post-gray">
+                <input
+                  id="candidate-name"
+                  type="text"
+                  name="full name"
+                  value=""
+                  placeholder="성함"
+                  required
+                />
+                <input
+                id="candidate-birthday"
+                type="text"
+                name="birthday"
+                value=""
+                placeholder="생년월일"
+                required
+              />
+              <input
+              id="candidate-school"
+              type="text"
+              name="school"
+              value=""
+              placeholder="졸업학교/학과"
+              required
+            />
+                <div class="input-group marT20 ">
+                  <div class="input-group-prepend">
+                    <button id="candidate-toggle" class="btn dropdown-toggle question-dropdown text-left" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="candidate-toggle-text">희망부문</span>
+                        <span class="caret"></span>
+                    </button>
+                    <div class="dropdown-menu">
+                      <li class="dropdown-item"><a href="#">필라테스</a></li>
+                      <li class="dropdown-item"><a href="#">GX</a></li>
+                      <li class="dropdown-item"><a href="#">키즈</a></li>
+                    </div>
+                  </div>
+                </div>
+                <input
+              id="candidate-number"
+              type="text"
+              name="candidate-number"
+              value=""
+              placeholder="연락처"
+              required
+            />
+                <div class="post-gray marT20">
+                    <textarea
+                      id="candidate-detail"
+                      placeholder="자기소개"
+                      rows="5"
+                      cols="50"
+                      required
+                    ></textarea>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="col-md-12 col-sm-6 col-xs-12 marT30">
+              <button type="submit" class="btn itg-button-3" id="send-application">전송</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!--//=== Footer Section ===//-->
+      <section>
+        <div class="detail-section">
+          <div class="color-f">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padT30">
+                  <div class="row text-center">
+                    <img class="mini-logo" src="assets/img/logo-vertical.png" />
+                  </div>
+                  <div class="row padT20 padB20 text-center text-color-grey">
+                      <address>
+                        라라핏 | 사업자등록번호 : 3175600375 | 대표자 : 김민지 <br><br>
+                        주소 : 서울 중랑구 동일로 678-1 / 2층 <br>
+                        대표전화: 02-6396-6999 <br>
+                      </address>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--//=== Footer finish ===//-->
+    <!--//=== Finish ===//-->
+   <!--Naver Map-->
+   <script src="assets/js/map/contact-navermap.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.hover-dropdown-menu-addon.js"></script>
+    <script src="assets/js/jquery.fancybox.pack.js"></script>
+    <script src="assets/js/main.js"></script>
+
+     <!-- ============================================================== -->
+    <!-- Firebase -->
+    <!-- ============================================================== -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="assets/js/personal-firebase.js"></script>
+    <script src="assets/js/job.js"></script>
+
+  </body>
+</html>

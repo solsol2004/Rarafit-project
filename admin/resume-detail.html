@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Favicon icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/img/favicon.ico"
+    />
+    <title>라라핏 - 라라핏만의 색을 만들다</title>
+    <!-- Custom CSS -->
+    <link href="../main.css" rel="stylesheet" />
+    <link href="style.min.css" rel="stylesheet" />
+    <link
+      href="../assets/plugin/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+<body>
+      <div id="main-wrapper">
+        <header class="topbar">
+          <nav class="navbar top-navbar navbar-expand-md">
+            <div class="navbar-header">
+              <!-- This is for the sidebar toggle which is visible on mobile only -->
+              <div class="col-2 justify-content-center">
+              <a
+                class="nav-toggler waves-effect waves-light d-block d-md-none text-center"
+                href="javascript:void(0)"
+              >
+              <i class="fa fa-bars" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="col-8 justify-content-center text-center">
+              <a class="text-center justify-content-center" href="index.html">
+                  <img class="mini-logo marR10"
+                    src="../assets/img/logo-vertical.png"
+                    alt="homepage"
+                  />
+              </a>
+            </div>
+            <div class="col-2"></div>
+            </div>
+          </nav>
+        </header>
+      <!-- ============================================================== -->
+      <!-- End Logo -->
+      <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+          <!-- Sidebar scroll-->
+          <div class="scroll-sidebar">
+            <!-- Sidebar navigation-->
+            <nav class="sidebar-nav">
+              <ul id="sidebarnav">
+                <!-- User Profile-->
+                <li class="nav-small-cap">
+                  <i class="mdi"></i>
+                  <span>스케쥴</span>
+                </li>
+                <li class="sidebar-item">
+                  <ul>
+                    <li class="sidebar-item">
+                      <a href="pilates-schedule.html" class="sidebar-link">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <span> 필라테스 </span>
+                      </a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="pt-schedule.html" class="sidebar-link">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <span class="hide-menu"> PT </span>
+                      </a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="kids-schedule.html" class="sidebar-link">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <span class="hide-menu"> 키즈 </span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+  
+                <li class="sidebar-item padT50">
+                  <ul>
+                    <li class="sidebar-item">
+                      <a href="ticket-list.html" class="sidebar-link">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        <span> 문의 내역 </span>
+                      </a>
+                  </ul>
+                </li>
+
+                <li class="sidebar-item padT50">
+                  <ul>
+                    <li class="sidebar-item">
+                      <a href="resume-list.html" class="sidebar-link">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        <span> 이력서 </span>
+                      </a>
+                  </ul>
+                </li>
+
+                <li class="sidebar-item padT10">
+                  <ul>
+                    <li class="sidebar-item">
+                      <a href="user-list.html" class="sidebar-link">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                        <span> 강사 관리 </span>
+                      </a>
+                  </ul>
+                </li>
+          </div>
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-5 align-self-center">
+                        <h4 class="page-title">상세 문의</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">지원 정보</h2>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="p-t-20">성함</h3>
+                                <h4 id="question-date"></h4>
+                                <h3 class="p-t-20">생년월일</h3>
+                                <h4 id="question-store"></h4>
+                                <h3 class="p-t-20">졸업학교/학과</h3>
+                                <h4 id="question-name"></h4>
+                                <h3 class="m-t-30">희망부문</h3>
+                                <h4 id="question-contact"></h4>
+                                <h3 class="m-t-30">연락처</h3>
+                                <h4 id="question-contact"></h4>
+                                <h3 class="m-t-30">자기소개</h3>
+                                <h4 id="question-contact"></h4>
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- apps -->
+    <script src="js/app.min.js"></script>
+    <script src="js/app.init.light-sidebar.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <script src="js/erase-ticket.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!--This page JavaScript -->
+
+       <!-- ============================================================== -->
+    <!-- Firebase -->
+    <!-- ============================================================== -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script src="../assets/js/personal-firebase.js"></script>
+    <script src="js/ticket-detail.js"></script>
+
+    
+</body>
+
+</html>

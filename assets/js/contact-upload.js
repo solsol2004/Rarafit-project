@@ -4,7 +4,7 @@ $("#send-question").click(function () {
   var 저장할거 = {
     성함: $("#name").val(),
     연락처: $("#contact").val(),
-    지점명: $(".btn span:first-child").text(),
+    지점명: $(".store-toggle-text").text(),
     문의내용: $("#question-detail").val(),
     날짜: new Date(+new Date() + 3240 * 10000)
       .toISOString()
@@ -16,7 +16,7 @@ $("#send-question").click(function () {
   if (
     $("#name").val() == "" ||
     $("#contact").val() == "" ||
-    $(".btn span:first-child").text() == "지점명" ||
+    $(".store-toggle-text").text() == "지점명" ||
     $("#question-detail").val() == ""
   ) {
     $(".alert").alert();
