@@ -78,10 +78,26 @@ label {
 }
 
 body,
-caption {
-  text-align: left;
-  font-family: "NanumSquareRound";;
+caption,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+th,
+td,
+div {
+  font-family: "NanumSquareRound";
 }
+
+div h4 {
+  font-family: "NanumSquareRound";
+}
+
+
+
 
 
 article,
