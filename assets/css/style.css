@@ -1485,15 +1485,8 @@ figure.team-img:before {
   content: "";
   opacity: 0;
   z-index: 1;
-  -webkit-transition: all 0.45s ease-in-out;
-  -moz-transition: all 0.45s ease-in-out;
-  -o-transition: all 0.45s ease-in-out;
-  -ms-transition: all 0.45s ease-in-out;
-  transition: all 0.45s ease-in-out;
 }
-.team:hover figure.team-img:before {
-  opacity: 0.85;
-}
+
 .team:hover {
   background-color: #fff;
   box-shadow: 0px 7px 14px 3px rgba(0, 0, 0, 0.175);
@@ -1978,21 +1971,22 @@ figcaption.img-effect-icon {
   background-color: #ffffff;
   width: 100%;
   float: left;
+  padding: 1.2vw 0 1.2vw 0;
 }
 .trainer-box {
   background-color: #eee;
 }
 
+
 .trainer-box1 {
   background-color: #fdeedd;
 }
-.trainer h4 a {
-  text-transform: uppercase;
+.trainer h4 {
   color: #000;
+  font-size: 16px
 }
 .trainer h5 {
-  text-transform: capitalize;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .class {
@@ -2086,23 +2080,7 @@ figure.trainer-hov:before {
 .trainer-effect:hover a {
   opacity: 1;
 }
-.trainer-box .owl-prev {
-  background: transparent;
-  color: #000;
-  font-size: 25px;
-  margin-left: -20px;
-}
-.trainer-box .owl-next {
-  background: transparent;
-  color: #000;
-  font-size: 25px;
-  margin-right: -20px;
-}
-.trainer-box .owl-nav {
-  position: absolute;
-  top: 50%;
-  margin-top: -20px;
-}
+
 
 .class-box .owl-prev {
   background: transparent;
