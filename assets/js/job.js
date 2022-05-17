@@ -1,6 +1,14 @@
 const db = firebase.firestore();
+const storage = firebase.storage();
+
 
 $("#send-application").click(function () {
+  
+  var file = document.querySelector('#candidate-pic').files[0];
+  var storageRef = storage.ref();
+  var 저장할경로 = storageRef.child('image/' + file.name);
+  var 업로드작업 = 저장할경로.put(file);
+
   var application = {
     성함: $("#candidate-name").val(),
     생년월일: $("#candidate-birthday").val(),

@@ -256,13 +256,13 @@ input[type="radio"]:checked ~ .check::before {
   visibility: visible;
 }
 input[type="radio"]:checked ~ label {
-  #color: #2e2e2e;
+  color: #2e2e2e;
 }
 input[type="checkbox"]:checked ~ .box-check {
   border: 2px solid;
 }
 input[type="checkbox"]:checked ~ label {
-  #color: #2e2e2e;
+  color: #2e2e2e;
 }
 input[type="checkbox"]:checked ~ .box-check:before {
   opacity: 1;
@@ -364,7 +364,7 @@ span {
   text-transform: capitalize;
   font-size: 14px;
   font-weight: 500;
-  webkit-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
@@ -389,7 +389,7 @@ span {
   text-transform: capitalize;
   font-size: 14px;
   font-weight: 500;
-  webkit-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
@@ -410,7 +410,7 @@ span {
   text-transform: capitalize;
   font-size: 14px;
   font-weight: 500;
-  webkit-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
@@ -431,7 +431,7 @@ span {
   text-transform: capitalize;
   font-size: 10px;
   font-weight: 500;
-  webkit-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
@@ -458,7 +458,7 @@ span {
   font-size: 18px;
   font-weight: 500;
   opacity: 0;
-  webkit-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
@@ -485,7 +485,7 @@ span {
   font-size: 16px;
   font-weight: 500;
   opacity: 0;
-  webkit-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
@@ -507,7 +507,7 @@ span {
   text-transform: capitalize;
   font-size: 14px;
   font-weight: 500;
-  webkit-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
@@ -1197,7 +1197,7 @@ a.navbar-brand {
   margin-top: -5.5%;
   position: absolute;
   height: 0;
-  webkit-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
@@ -1210,7 +1210,7 @@ a.navbar-brand {
   width: 30px;
   text-align: center;
   color: #fff;
-  webkit-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
@@ -1222,7 +1222,7 @@ a.navbar-brand {
   background-color: #fff;
   width: 30px;
   text-align: center;
-  webkit-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
@@ -1234,7 +1234,7 @@ a.navbar-brand {
   width: 30px;
   text-align: center;
   color: #fff;
-  webkit-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
@@ -1245,7 +1245,7 @@ a.navbar-brand {
   background-color: #eee;
   width: 30px;
   text-align: center;
-  webkit-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
@@ -1265,7 +1265,7 @@ div#banner .owl-nav {
 }
 div#banner .owl-prev {
   margin-left: 30px;
-  webkit-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
@@ -1273,7 +1273,7 @@ div#banner .owl-prev {
 }
 div#banner .owl-next {
   margin-right: 30px;
-  webkit-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
@@ -1294,7 +1294,7 @@ div#banner .owl-next {
   text-align: center;
 }
 .details-section-boxs {
-  webkit-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
@@ -1485,7 +1485,7 @@ figure.team-img:before {
   content: "";
   opacity: 0;
   z-index: 1;
-  webkit-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
@@ -1520,7 +1520,7 @@ figcaption.team-icon ul {
   margin-left: -48%;
   opacity: 0;
   z-index: 1;
-  webkit-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
@@ -1537,9 +1537,9 @@ figcaption.team-icon ul {
   border-radius: 100%;
   font-size: 16px;
   padding: 5px 10px;
-  float: left;
+ float:left;
   color: #777777;
-  webkit-transition: all 0.45s ease-in-out;
+  -webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
   -o-transition: all 0.45s ease-in-out;
   -ms-transition: all 0.45s ease-in-out;
@@ -2503,7 +2503,7 @@ p.service-text-paragraf {
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
   border: 1px solid #dad55e;
-  background: #red;
+  background: red;
   color: #000;
 }
 .ui-state-active,
