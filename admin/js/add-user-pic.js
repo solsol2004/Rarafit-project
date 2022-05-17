@@ -13,6 +13,9 @@ db.collection("instructor-info")
               <figure class="team-img">
                   <img src="${doc.data().이미지}">
               </figure>
+              <button class="close-button">강사 사진 삭제하기<span class="uid hidden">${
+                doc.id
+              }</span></button>
               <div class="trainer padT20 padB20">
                   <h4>${doc.data().이름}</h4>
                   <h5>${doc.data().레벨}</h5>
@@ -25,6 +28,8 @@ db.collection("instructor-info")
     });
   });
 
+
+  
 $(".add-instructor-button").click(function () {
 
     var instructorFile = document.querySelector('.instructor-picture').files[0];
@@ -70,7 +75,7 @@ $(".add-instructor-button").click(function () {
 );
 });
 
-$(document).on("click", ".remove-this-row", function () {
+$(document).on("click", ".close-button", function () {
   db.collection("instructor-info")
     .doc($(this).children(".uid").text())
     .delete()

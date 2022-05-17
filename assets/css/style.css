@@ -419,6 +419,7 @@ span {
 .itg-button-3:hover {
   color: #fff;
 }
+
 .itg-button-4 {
   padding: 0px 15px;
   background: rgba(0, 0, 0, 0);
@@ -549,6 +550,7 @@ span {
 .itg-button:hover span {
   color: #fff;
 }
+
 /* 3.4 padding style */
 
 .pad0 {
