@@ -3518,3 +3518,15 @@ ul.text-color.capitalize.capitalize li {
 }
 
 /* Finish*/
+.job-background {
+  position: relative;
+}
+
+.job-spinner {
+  z-index: 10;
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  bottom: 0;
+  display: none;  
+}

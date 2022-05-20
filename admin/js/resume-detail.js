@@ -14,4 +14,6 @@ db.collection("job")
     $("#resume-field").html(result.data().희망부문);
     $("#resume-contact").html(result.data().연락처);
     $("#resume-description").html(result.data().자기소개);
+    $("#resume-picture").attr("src", result.data().이미지);
   });
+
